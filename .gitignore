@@ -1,0 +1,12 @@
+# 发布排除 / publish exclusions
+skills.zip
+.workbuddy-ai/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 脚本运行产物
+*.bak-alice-inject
+logs/*.log
