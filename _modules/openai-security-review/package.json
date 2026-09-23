@@ -1,0 +1,17 @@
+{
+  "name": "openai-security-review-skill",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Runtime dependencies for the openai-security-review Codex skill.",
+  "scripts": {
+    "setup": "node scripts/check_runtime.mjs",
+    "check": "npm run check:node && npm run check:python && node scripts/check_runtime.mjs",
+    "check:node": "node --check scripts/auth_login.mjs && node --check scripts/backend_probe.mjs && node --check scripts/passive_crawl.mjs && node --check scripts/role_matrix.mjs && node --check scripts/osr.mjs",
+    "check:python": "python3 -c \"import ast,pathlib; [ast.parse(pathlib.Path(p).read_text()) for p in ['scripts/active_probe.py','scripts/active_validate.py','scripts/api_spec_map.py','scripts/authz_map.py','scripts/backend_common.py','scripts/backend_fingerprint.py','scripts/create_audit_workspace.py','scripts/dataflow_risk_map.py','scripts/generate_report.py','scripts/hypothesize.py','scripts/inventory.py','scripts/safe_validate.py','scripts/server_route_map.py','scripts/server_security_checks.py','scripts/source_api_map.py','scripts/validation_coverage.py']]\"",
+    "scan": "node scripts/osr.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0"
+  }
+}

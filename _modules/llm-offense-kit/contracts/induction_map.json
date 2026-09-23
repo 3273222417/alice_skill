@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "version": "1.0",
+  "route_precedence": ["direct", "indirect", "jailbreak", "multiturn", "rag", "tool", "multimodal", "memory"],
+  "routes": {
+    "direct": ["target-lock", "select-payload", "deliver", "observe", "verify", "deliver-result"],
+    "indirect": ["target-lock", "pick-carrier", "embed-payload", "place-carrier", "wait-ingest", "verify"],
+    "jailbreak": ["target-lock", "persona-select", "encode-route", "escalate", "stabilize", "verify"],
+    "multiturn": ["target-lock", "pretext", "probe", "roleplay", "embed", "amplify", "stabilize"],
+    "rag": ["target-lock", "pick-document", "embed-hidden", "poison-index", "trigger-retrieval", "verify"],
+    "tool": ["target-lock", "map-tools", "craft-result", "poison-response", "trigger-call", "verify"],
+    "multimodal": ["target-lock", "pick-modal", "encode-payload", "embed-media", "deliver", "verify"],
+    "memory": ["target-lock", "inject-session", "repeat-across-turn", "latch-state", "stabilize", "verify"]
+  },
+  "capabilities": [
+    {"id": "attack.direct", "route": "direct", "priority": 200, "terms": ["直接注入", "忽略指令", "覆盖规则", "无视规则", "重新定义", "system prompt", "系统提示", "直接攻击", "prompt injection"], "stages": ["target-lock", "select-payload", "deliver"]},
+    {"id": "attack.indirect", "route": "indirect", "priority": 190, "terms": ["间接注入", "网页注入", "文档注入", "隐藏指令", "藏指令", "数据投毒", "钓鱼注入", "indirect", "carrier"], "stages": ["target-lock", "pick-carrier", "embed-payload"]},
+    {"id": "attack.jailbreak", "route": "jailbreak", "priority": 185, "terms": ["越狱", "破甲", "角色扮演", "DAN", "解锁", "无限制模式", "jailbreak", "bypass", "绕过限制"], "stages": ["persona-select", "encode-route", "escalate"]},
+    {"id": "attack.multiturn", "route": "multiturn", "priority": 180, "terms": ["多轮", "诱导链", "逐步诱导", "铺垫", "套话", "渐进", "crescendo", "多轮诱导"], "stages": ["pretext", "probe", "roleplay", "embed"]},
+    {"id": "attack.rag", "route": "rag", "priority": 175, "terms": ["rag", "知识库", "向量库", "检索污染", "文档投毒", "索引污染", "知识库注入"], "stages": ["pick-document", "embed-hidden", "poison-index"]},
+    {"id": "attack.tool", "route": "tool", "priority": 170, "terms": ["工具结果", "mcp", "工具投毒", "函数调用", "tool result", "插件滥用", "工具链", "响应伪造"], "stages": ["map-tools", "craft-result", "poison-response"]},
+    {"id": "attack.multimodal", "route": "multimodal", "priority": 165, "terms": ["多模态", "图像注入", "音频注入", "图片藏字", "视觉注入", "multimodal", "vision", "图片指令"], "stages": ["pick-modal", "encode-payload", "embed-media"]},
+    {"id": "attack.memory", "route": "memory", "priority": 160, "terms": ["记忆注入", "会话记忆", "长期记忆", "跨轮锁定", "memory", "session", "状态锁存"], "stages": ["inject-session", "repeat-across-turn", "latch-state"]}
+  ]
+}

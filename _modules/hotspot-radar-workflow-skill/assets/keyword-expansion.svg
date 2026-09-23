@@ -1,0 +1,32 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Keyword expansion example</title>
+  <desc id="desc">An example showing one broad theme expanding into multiple enabled search keywords.</desc>
+  <rect width="1200" height="560" fill="#F8FAFC"/>
+  <text x="72" y="82" fill="#0F172A" font-family="Arial, sans-serif" font-size="34" font-weight="700">主题自动扩词示例</text>
+  <rect x="72" y="130" width="300" height="90" rx="16" fill="#DBEAFE" stroke="#60A5FA"/>
+  <text x="104" y="168" fill="#1E3A8A" font-family="Arial, sans-serif" font-size="18" font-weight="700">输入主题</text>
+  <text x="104" y="198" fill="#1E293B" font-family="Arial, sans-serif" font-size="22">AI 自动化真实项目</text>
+  <path d="M386 175H478" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M464 160L480 175L464 190" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="520" y="82" width="608" height="396" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="552" y="126" fill="#0F172A" font-family="Arial, sans-serif" font-size="24" font-weight="700">enabled keywords</text>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#1E293B">
+    <rect x="552" y="154" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="572" y="183">AI 自动化真实项目</text>
+    <rect x="820" y="154" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="840" y="183">AI 做项目</text>
+    <rect x="552" y="218" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="572" y="247">一个人 AI 工作流</text>
+    <rect x="820" y="218" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="840" y="247">AI 项目复盘</text>
+    <rect x="552" y="282" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="572" y="311">AI 工作流教程</text>
+    <rect x="820" y="282" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="840" y="311">Codex 项目实战</text>
+    <rect x="552" y="346" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="572" y="375">Codex 工作流</text>
+    <rect x="820" y="346" width="236" height="44" rx="10" fill="#ECFDF5"/>
+    <text x="840" y="375">Skill 工作流</text>
+  </g>
+  <text x="552" y="438" fill="#64748B" font-family="Arial, sans-serif" font-size="16">Only enabled keywords are fetched in the current run. Candidate and paused keywords are preserved for later tuning.</text>
+</svg>

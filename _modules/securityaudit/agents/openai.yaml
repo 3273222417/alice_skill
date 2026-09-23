@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Audit"
+  short_description: "Audit, harden, and improve project security"
+  default_prompt: "Use $securityaudit to audit this project and write reports under audits/, or use $securityaudit --fix to repair confirmed security, DoS, frontend, and code-quality findings safely."

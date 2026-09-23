@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "OpenClaw 专家头像批量生成"
+  short_description: "批量规划、生成、压缩并落地 OpenClaw 专家头像。"
+  default_prompt: "按 OpenClaw 专家清单继续批量补头像，保持卡通风格、人物和场景差异化，并写入项目资源目录。"

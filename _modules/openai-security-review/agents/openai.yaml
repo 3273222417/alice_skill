@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenAI Security Review"
+  short_description: "Shannon-style defensive code security reviews"
+  default_prompt: "Use $openai-security-review to audit this repository and produce an evidence-backed security report."

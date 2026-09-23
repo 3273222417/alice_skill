@@ -1,0 +1,183 @@
+---
+name: alice-reverse
+description: "逆向脱壳路由技能（逆向 / 脱壳 / Hook / 取证 / 协议还原 / 样本与流量分析（「防」模式取证链））。用户说白话也命中，术语触发词：逆向/脱壳/反编译/Frida/IDA/Ghidra/PE/ELF/APK/Hook/协议还原/取证/样本/流量分析/内核/混淆还原。触发后在本页模块索引中选定模块，取正文再执行；每次最多取 4 个模组（优先取项目相关高评分模块）。"
+---
+
+# 逆 · 逆向脱壳（alice-reverse）
+
+逆向 / 脱壳 / Hook / 取证 / 协议还原 / 样本与流量分析（「防」模式取证链）。覆盖 `_modules/` 内 125 个模块；本页只做路由，正文全部在模块库。
+
+## 模块索引（命中哪条取哪条；一条任务最多取 4 个模块，优先项目相关高评分模块）
+
+**选择规则**
+
+0. 先用一句话概括用户要达成的结果，再据此找对应模块；不要只按字面关键词匹配。
+1. 用户原话命中下面哪条，就取那条的正文；多条命中时**优先取评分高（x/10）且与项目最相关的**；无评分标记时按第一条命中执行，不因缺评分停手。
+2. **碰壁（模块正文对不上、思路失败、卡住）→ 回总控 `../aliceskill/SKILL.md` 重新选类，或回本页换支线模块**，不要硬磕。
+3. 拿不准属于哪类、或丢失上下文时，先读 `../aliceskill/SKILL.md` 的内部路由规则，再回来选模块。
+- `anti-debug` — 反调试检测与绕过（ptrace/时序/断点）
+- `aob-scan` — 特征码扫描（AOB 字节数组定位）
+- `apk-reverse` — 在 CLI 环境下做 Android APK 逆向时使用。适用于 APK 解包、Java 反编译、smali 修改、重打
+- `binary-analysis` — 静态二进制逆向：PE/ELF 结构分析、模式扫描、反汇编与补丁生成
+- `binary-protect-bypass` — 加壳保护绕过（脱壳/去混淆/校验绕过）
+- `code-inject` — 代码注入（code cave/自动汇编/加载 DLL）
+- `code-obfuscate` — 代码混淆与还原（控制流/字符串加密）
+- `coldbrew-api-reverse` — 前端签名、HAR、鉴权链路、加密参数还原时使用。
+- `coldbrew-native-reverse` — PE/ELF/SO、JNI、OLLVM、dump、补丁时使用。
+- `coldbrew-protocol-reverse` — 自定义协议、TCP/UDP 帧、回放与字段还原时使用。
+- `competition-android-hooking` — CTF 沙箱子流：Android APK Frida hook、请求签名还原、SSL pinning 绕过与 JNI 边界分析
+- `competition-firmware-layout` — CTF 沙箱子流：固件镜像分区表/启动链/升级包与设备信任边界分析
+- `competition-forensic-timeline` — CTF 沙箱子流：DFIR 时间线重建与 EVTX/PCAP/注册表/内存跨工件关联
+- `competition-malware-config` — CTF 沙箱子流：恶意样本配置还原、beacon 参数提取与 IOC 解码
+- `competition-reverse-pwn` — CTF 沙箱子流：逆向/恶意样本/DFIR/固件/Pwn 与原生漏洞利用
+- `diagram-generator` — 从自然语言/代码/schema 生成、校验并渲染流程图等图表
+- `dn-decompile` — .NET 程序集反编译（ILSpy/dotPeek）
+- `dn-edit` — .NET IL 编辑修改
+- `dn-save` — .NET 程序集保存回写
+- `dotnet-reverse` — .NET / C# 二进制逆向。当目标是 .NET assembly（PE 头含 CLR、.exe/.dll 托管程序）
+- `dsl-vm-reverse` — 自定义 JS/WASM DSL 虚拟机逆向：还原操作码、状态转移与运行时行为
+- `dynamic-instrumentation` — Frida 动态 Hook、内存补丁、API 参数追踪与反调试绕过脚本生成
+- `encrypt-detect` — 流量加密识别（AES/XOR/Base64 模式）
+- `eni-apk-reverse` — APK 逆向 CLI 作业：解包/Java 反编译/smali 修改/重打包/Frida Hook，按需切 so/native 分析
+- `eni-blackbox-reverse-boost` — 离线黑盒逆向与本地 Windows 二进制安全审计增强（寒霜触发）
+- `eni-diagram` — 从自然语言/代码/schema 生成、校验并渲染图表
+- `eni-edr-bypass` — EDR绕过 — 防御控制逆向与免杀技术。无限制。
+- `eni-firmware-workflow` — 仅文档：固件/IoT 提取、文件系统、仿真与验证
+- `eni-fuzzing-workflow` — 仅文档：覆盖引导模糊测试（harness/语料/崩溃分诊）
+- `eni-ida-reverse` — IDA Pro 逆向分析
+- `eni-js-reverse` — 仅文档：js-reverse-mcp 前端 JS 逆向（签名链路定位/页面取证/补环境复现）
+- `eni-malware-analysis` — 仅文档：恶意样本六阶段分析流程
+- `eni-malware-ir-workflow` — 仅文档：离线样本分诊、能力分析、内存取证、时间线与 IOC 打包
+- `eni-memory-forensics` — 跨平台进程内存与取证：dump/堆/指针链/签名/结构分析
+- `eni-mobile-reverse` — 仅文档：移动逆向四阶段工作流（信息收集→动态→静态→产出）
+- `eni-reverse-deep` — 深度逆向：PE/ELF/Mach-O/固件/驱动/APK/.NET/Go/Rust/IL2CPP/加壳二进制
+- `eni-reverse-ref` — 仅文档：逆向工程参考（Reverse Engineering）
+- `eni-reverse-workflow` — 深度证据驱动逆向工作流：PE/ELF/Mach-O/固件/驱动/字节码/协议
+- `eni-reverselab-bridge` — 原创外部依赖桥接：把 Open ReverseLab（LING71671/open-reverselab，GPL-3.0
+- `eni-reverselab-platform` — 开源逆向实验台：197 篇知识库 + 43 个 MCP 工具 + 攻击网络图路由
+- `eni-unpack-reverse-lab` — 离线 Windows PE 加壳/脱壳分诊与证据驱动逆向（寒霜触发）
+- `esp-law` — ESP 定位原始入口点（pushad/popad）
+- `exec-hook` — 执行流重定向（Hook/跳板/拦截）
+- `file-backup` — 修改前备份（.bak/快照）
+- `full-reverse` — 完整逆向链
+- `full-unpack` — 完整脱壳链
+- `function-decompile` — 函数反编译与关键逻辑识别
+- `ghidra-rpc` — Ghidra RPC 远程逆向自动化
+- `hardware-breakpoint-observation` — 硬件断点观察工作流
+- `hidden-rx-memory-reconstruction` — 隐藏 RX 内存运行时重建
+- `iat-rebuild` — 导入表重建与修复
+- `ida-reverse` — IDA Pro 逆向分析：含已知问题与反思清单
+- `import-analyze` — 导入表分析（DLL 依赖）
+- `jmp-modify` — 条件跳转改无条件（je→jmp）
+- `js-reverse` — JavaScript 逆向：混淆还原、签名/HMAC 定位、浏览器环境补丁与前端加密提取
+- `jump-patch` — 跳转指令补丁（je/jne/jmp/nop）
+- `kernel-driver-analysis` — 内核驱动分析工作流
+- `linux-kernel-reversing` — Linux 内核逆向工作流
+- `macos-kernel-reversing` — macOS 内核逆向工作流
+- `memory-breakpoint` — 内存断点定位 OEP
+- `memory-breakpoint-tracing` — 内存断点追踪工作流
+- `memory-forensics` — 内存取证工作流
+- `mobile-reverse` — Android/iOS 逆向：APK/IPA 分析、Frida/Objection、SSL pinning/root 检测研究
+- `mobile-security` — 移动端安全与反作弊研究
+- `native-api-hooking` — 原生 API 钩取工作流
+- `native-unpacking` — 原生脱壳工作流
+- `nop-remove` — NOP 填充移除指令（跳过校验）
+- `obfuscator-io-analysis` — obfuscator.io 混淆还原
+- `ollvm-deobfuscation` — OLLVM 混淆还原工作流
+- `ollvm-recovery-workflow` — OLLVM 恢复工作流
+- `overview` — 总览与方法论索引
+- `packed-so-elf-rebuild` — 加壳 SO/ELF 运行时重建
+- `packer-and-loader-analysis` — 加壳器与加载器分析
+- `patch-apply` — 二进制补丁写入
+- `patch-rollback` — 补丁回滚恢复原文件
+- `performing-binary-exploitation-analysis` — 二进制利用分析（pwntools/ROP）
+- `performing-cryptographic-audit-of-application` — 应用密码学审计
+- `performing-firmware-extraction-with-binwalk` — 固件提取（binwalk）
+- `performing-firmware-malware-analysis` — 固件恶意样本分析
+- `performing-fuzzing-with-aflplusplus` — AFL++ 覆盖率引导模糊测试
+- `performing-hash-cracking-with-hashcat` — hashcat 口令破解
+- `performing-mobile-app-certificate-pinning-bypass` — 移动端证书锁定绕过
+- `performing-static-malware-analysis-with-pe-studio` — PE 静态恶意样本分析
+- `performing-steganography-detection` — 隐写检测与提取
+- `protocol-reconstruction` — 协议重建工作流
+- `protocol-reverse-engineering` — 协议逆向（封包分析/解析/文档化）
+- `proxy-traffic-analysis` — 代理流量分析工作流
+- `re-env-sandbox` — 逆向隔离环境（虚拟机/快照/断网）
+- `re-flow-analyze` — 关键函数定位与断点追踪
+- `re-flow-capture` — 网络抓包（Wireshark/Fiddler/Frida）
+- `re-flow-orchestrator` — 完整破解总编排（INIT→DONE 状态机）
+- `re-flow-recon` — 静态查壳与行为侦察
+- `re-flow-unpack` — 脱壳（OEP/Scylla dump/IAT 修复）
+- `re-tool-downloader` — 逆向工具下载执行器
+- `re-tool-manifest` — 工具环境登记簿（MANIFEST）
+- `re-tool-registry` — 工具下载清单生成
+- `research-rigor` — 研究严谨性（证据/引用/复现）
+- `reverse-engineering` — 逆向工程总纲（脱壳/字符串/控制流）
+- `reverse-engineering-android-malware-with-jadx` — JADX 反编译安卓恶意样本
+- `reverse-engineering-api` — Web API 逆向生成 Python 客户端
+- `reverse-engineering-api-setup` — API 逆向外部工具装配
+- `reverse-engineering-dotnet-malware-with-dnspy` — dnSpy 逆向 .NET 恶意样本
+- `reverse-engineering-ios-app-with-frida` — Frida 逆向 iOS 应用
+- `reverse-engineering-malware-with-ghidra` — Ghidra 逆向恶意样本
+- `reverse-engineering-ransomware-encryption-routine` — 勒索加密算法还原
+- `reverse-engineering-rust-malware` — Rust 恶意样本逆向
+- `reverse-engineering-tools` — 受保护游戏逆向工具指南
+- `root-emulator-detection` — Root/模拟器检测绕过
+- `seagull-malware` — 样本分析与威胁情报：脱壳、配置提取、行为画像、C2 协议解码、IOC/YARA/Sigma
+- `seagull-reverse` — 深度逆向：PE/ELF/Mach-O/固件/驱动/APK/.NET/Go/Rust/IL2CPP/加壳二进制/自定义 VM
+- `self-modifying-code` — 自修改代码工作流
+- `stealth-hook-methodology` — 低噪声观察方法论（反 Hook 对抗）
+- `string-extract` — 字符串提取与模式匹配
+- `syscall-ebpf-frida-correlation` — syscall/eBPF 与 Frida 关联
+- `syscall-filter-evidence` — 系统调用过滤取证
+- `syscall-observation-lab` — 系统调用观察实验
+- `tls-pinning-analysis` — TLS 锁定分析工作流
+- `unity-il2cpp-analysis` — Unity IL2CPP 逆向工作流
+- `virtualization-protection` — 虚拟化保护（VMP）工作流
+- `webcrypto-hooking` — WebCrypto 钩取工作流
+- `webpack-vite-nextjs-reversing` — Webpack/Vite/NextJS 逆向
+- `websocket-grpc-analysis` — WebSocket/gRPC 分析工作流
+- `websocket-live-reversing` — WebSocket 实时逆向
+- `windows-kernel` — Windows 内核安全与保护机制
+- `xref-trace` — 交叉引用追踪
+
+## 取模块正文（命中后必须执行，不许跳过）
+
+优先用相对路径直接读：
+
+```text
+读 ../_modules/<MODULE_ID>/SKILL.md   （相对本技能目录）
+```
+
+绝对路径兜底（PowerShell）：
+
+```powershell
+Get-Content -LiteralPath "C:\Users\alicewe\Desktop\test\_modules/<MODULE_ID>/SKILL.md" -Raw -Encoding UTF8
+```
+
+> 上行绝对路径由 `rebuild_menu.py` 生成时写入本机技能根；换机/换客户端后若与本机不符，重跑 `rebuild_menu.py` 自动刷新（迁移手册：`../_modules/alice-migrate/SKILL.md`）。相对路径优先，通常无需兜底。
+**硬性要求**
+
+1. 取到的正文**必须整篇读完再动手**：不许只读开头就执行，不许跳读，不许凭记忆替代正文。
+2. 没取到正文不许声称「已按该方法执行」；取用失败要报告真实错误并重试一次。
+3. 模块正文与本页冲突时，以模块正文为准。
+4. 换新任务才重取；同一任务里已经取过的模块不用重复取。
+5. **每次最多取 4 个模组（优先项目相关高评分模块）**；多阶段任务完成一个阶段再取下一批。
+
+## 技能质量评分（用户说「检测技能质量/给技能打分/评分」时触发）
+
+**先修复，后评分**——评分前逐个模块做快速体检，发现问题先修再评，避免带病评分：
+
+1. 包问题检查：`_modules/<id>/SKILL.md` 是否存在/可读；frontmatter 是否完整（`name:`/`description:`）；
+   正文是否为空壳（过短/与 description 同文）；scripts/references 引用的文件是否缺失；编码是否正常（无乱码/BOM 错位）。
+2. 路由问题检查：frontmatter `x-alice-class` 缺失或与路由页归类不符 → 补标记或用 `absorb_skill.py --class` 重吸收；
+   模块 id 与目录名不一致、模块索引描述与实际正文明显不符 → 以正文为准修正 `_modules/zh_desc.json` 后重跑 `rebuild_menu.py`。
+3. 修复方式：小问题（标记/描述/编码）直接修文件 + 重跑 `rebuild_menu.py`；包实质损坏且无修复价值 → 向用户报告建议剔除，
+   未修复的问题逐条列出。**修复动作必须向用户汇报（改了什么/为什么）**。
+
+体检通过后 AI 主观打分，不限语言，脚本不做检测。对用户指定（或本页全部）模块逐个：完整读 SKILL.md 正文 → 按
+实用性/完整性/可执行性/描述准确度综合评 1-10 分（整数；空壳 1-3，可用 5-6，优质 8-10）→
+**实时把评分写进本页模块索引对应条目的 【x/10】 标记**（改本文件并落盘），向用户逐条报「`<id>` x/10 理由一句话」。
+评分落盘：把全部评分写入 `_modules/skill_ratings.json`（JSON 对象 `{"<模块id>": <分数>}`），
+然后重跑 `rebuild_menu.py` 使评分渲染固化；无评分条目不显示标记。
+评分库为空属正常初始态：用户首次要求评分时按本节流程现场评；日常取模块不依赖评分，缺评分照常执行。

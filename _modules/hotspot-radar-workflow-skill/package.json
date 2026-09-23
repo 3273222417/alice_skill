@@ -1,0 +1,26 @@
+{
+  "name": "hotspot-radar-workflow-skill",
+  "version": "0.1.4",
+  "description": "A Codex Skill for turning one content theme into evidence-backed Douyin topic candidates.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check scripts/first-run-check.mjs && node --check scripts/setup-tikhub-token.mjs && node --check scripts/run-topic-checklist.mjs && node --check scripts/run-gate1-topic-validation.mjs && node --check scripts/build-gate1a-owner-review.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "first-run": "node scripts/first-run-check.mjs",
+    "setup-token": "node scripts/setup-tikhub-token.mjs",
+    "topic": "node scripts/run-topic-checklist.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "codex-skill",
+    "douyin",
+    "tikhub",
+    "content-research",
+    "topic-discovery",
+    "short-video"
+  ]
+}

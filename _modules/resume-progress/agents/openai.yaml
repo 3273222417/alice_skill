@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "项目护航·恢复进度"
+  short_description: "为游戏歪瓜项目保驾护航：全量实时落盘，说恢复当前进度即从断点续跑"
+  default_prompt: "Use $resume-progress to guard this project: fully save current progress to PROGRESS.md/CONVERSATION_LOG.md and continue from the last milestone."

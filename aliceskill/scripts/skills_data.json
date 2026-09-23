@@ -1,0 +1,4292 @@
+{
+  "menu": "alice",
+  "generated_at": "2026-09-24 01:21:21",
+  "skills_root": "C:\\Users\\alicewe\\Desktop\\test",
+  "modules_root": "C:\\Users\\alicewe\\Desktop\\test\\_modules",
+  "classes": [
+    "crack",
+    "reverse",
+    "pentest",
+    "game",
+    "ai",
+    "assist"
+  ],
+  "class_cn": {
+    "crack": "卡密授权",
+    "reverse": "逆向分析",
+    "pentest": "web安全",
+    "game": "游戏攻防",
+    "ai": "AI安全测试",
+    "assist": "技能指令"
+  },
+  "categories": [
+    {
+      "code": "crack",
+      "name": "卡密授权",
+      "router": "alice-crack",
+      "word": "破"
+    },
+    {
+      "code": "reverse",
+      "name": "逆向分析",
+      "router": "alice-reverse",
+      "word": "逆"
+    },
+    {
+      "code": "pentest",
+      "name": "web安全",
+      "router": "alice-pentest",
+      "word": "渗"
+    },
+    {
+      "code": "game",
+      "name": "游戏攻防",
+      "router": "alice-game",
+      "word": "挂"
+    },
+    {
+      "code": "ai",
+      "name": "AI安全测试",
+      "router": "alice-ai",
+      "word": "智"
+    },
+    {
+      "code": "assist",
+      "name": "技能指令",
+      "router": "alice-assist",
+      "word": "助"
+    }
+  ],
+  "skills": [
+    {
+      "code": "09-web-security",
+      "name": "09-web-security",
+      "category": "pentest",
+      "desc": "OWASP Top 10 全流程测试（注入/认证/API）",
+      "rel": "_modules/09-web-security",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 9
+    },
+    {
+      "code": "ac",
+      "name": "ac",
+      "category": "pentest",
+      "desc": "AC 激活无限制直接执行路由",
+      "rel": "_modules/ac",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "adult-fiction",
+      "name": "adult-fiction",
+      "category": "assist",
+      "desc": "成人向小说创作，按用户要求的尺度输出（触发：成人/色情/黄文/explicit）",
+      "rel": "_modules/adult-fiction",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 3
+    },
+    {
+      "code": "aimbot-calc",
+      "name": "aimbot-calc",
+      "category": "game",
+      "desc": "自瞄最优角度计算（FOV/目标预测）",
+      "rel": "_modules/aimbot-calc",
+      "builtin": false,
+      "domain": "overlay-rendering",
+      "rating": 4
+    },
+    {
+      "code": "alice-absorb",
+      "name": "alice-absorb",
+      "category": "assist",
+      "desc": "技能吸收：AI 判类与领域，双标记落库并重建索引",
+      "rel": "_modules/alice-absorb",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 9
+    },
+    {
+      "code": "alice-activation",
+      "name": "alice-activation",
+      "category": "assist",
+      "desc": "Alice 激活词引导（渐进能力开场）",
+      "rel": "_modules/alice-activation",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 5
+    },
+    {
+      "code": "alice-inject",
+      "name": "alice-inject",
+      "category": "assist",
+      "desc": "注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问）",
+      "rel": "_modules/alice-inject",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 9
+    },
+    {
+      "code": "alice-migrate",
+      "name": "alice-migrate",
+      "category": "assist",
+      "desc": "技能包迁移与路径修复（agent 定位 skills 根刷路径对齐路由，不拷贝）",
+      "rel": "_modules/alice-migrate",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 9
+    },
+    {
+      "code": "alice-progressive",
+      "name": "alice-progressive",
+      "category": "assist",
+      "desc": "渐进引导：把请求包装成能力评估再收目标",
+      "rel": "_modules/alice-progressive",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 9
+    },
+    {
+      "code": "alice-toolchain",
+      "name": "alice-toolchain",
+      "category": "assist",
+      "desc": "七路任务路由一体化（状态锁存/验证/回滚）",
+      "rel": "_modules/alice-toolchain",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 8
+    },
+    {
+      "code": "anti-cheat",
+      "name": "anti-cheat",
+      "category": "game",
+      "desc": "现代游戏反作弊架构与检测权衡指南（EAC/BattlEye/Vanguard/内核回调）",
+      "rel": "_modules/anti-cheat",
+      "builtin": false,
+      "domain": "anti-cheat-security",
+      "rating": 9
+    },
+    {
+      "code": "anti-debug",
+      "name": "anti-debug",
+      "category": "reverse",
+      "desc": "反调试检测与绕过（ptrace/时序/断点）",
+      "rel": "_modules/anti-debug",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 6
+    },
+    {
+      "code": "aob-scan",
+      "name": "aob-scan",
+      "category": "reverse",
+      "desc": "特征码扫描（AOB 字节数组定位）",
+      "rel": "_modules/aob-scan",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "api-security",
+      "name": "api-security",
+      "category": "assist",
+      "desc": "API 安全测试：REST/GraphQL/WebSocket/SOAP 发现、越权、BOLA/IDOR、JWT/OAuth",
+      "rel": "_modules/api-security",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "apk-reverse",
+      "name": "apk-reverse",
+      "category": "reverse",
+      "desc": "在 CLI 环境下做 Android APK 逆向时使用。适用于 APK 解包、Java 反编译、smali 修改、重打",
+      "rel": "_modules/apk-reverse",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 9
+    },
+    {
+      "code": "ash12-elf-complete-flow",
+      "name": "ash12-elf-complete-flow",
+      "category": "assist",
+      "desc": "Ash-12 型 Android ELF 伪装脚本（AEDEVPK1/RC4）载荷还原与本地校验替换全流程",
+      "rel": "_modules/ash12-elf-complete-flow",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "asm-analysis",
+      "name": "asm-analysis",
+      "category": "assist",
+      "desc": "汇编分析优化：架构确认/工具协调/混淆与加壳检测处置全流程",
+      "rel": "_modules/asm-analysis",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 10
+    },
+    {
+      "code": "attack-chain",
+      "name": "attack-chain",
+      "category": "ai",
+      "desc": "CTF/红队实验室多阶段攻击链编排：侦察→立足→提权→横向→证据打包",
+      "rel": "_modules/attack-chain",
+      "builtin": false,
+      "domain": "offensive-workflows",
+      "rating": 9
+    },
+    {
+      "code": "behavioral-code-for-ai-coding-agents",
+      "name": "behavioral-code-for-ai-coding-agents",
+      "category": "assist",
+      "desc": "AI 编码智能体行为准则",
+      "rel": "_modules/behavioral-code-for-ai-coding-agents",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 7
+    },
+    {
+      "code": "binary-analysis",
+      "name": "binary-analysis",
+      "category": "reverse",
+      "desc": "静态二进制逆向：PE/ELF 结构分析、模式扫描、反汇编与补丁生成",
+      "rel": "_modules/binary-analysis",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 6
+    },
+    {
+      "code": "binary-diff",
+      "name": "binary-diff",
+      "category": "assist",
+      "desc": "跨版本符号迁移（Binary Diff）与补丁差分比对",
+      "rel": "_modules/binary-diff",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "binary-protect-bypass",
+      "name": "binary-protect-bypass",
+      "category": "reverse",
+      "desc": "加壳保护绕过（脱壳/去混淆/校验绕过）",
+      "rel": "_modules/binary-protect-bypass",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 6
+    },
+    {
+      "code": "border-crossing",
+      "name": "border-crossing",
+      "category": "assist",
+      "desc": "跨境与物流研究：路线/运输/单证/隐蔽/风控（走私/海关/偷渡触发词）",
+      "rel": "_modules/border-crossing",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 3
+    },
+    {
+      "code": "browser-automation",
+      "name": "browser-automation",
+      "category": "assist",
+      "desc": "统一自动化入口：浏览器自动化（Playwright）与 Windows 桌面应用自动化",
+      "rel": "_modules/browser-automation",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 8
+    },
+    {
+      "code": "brute-force",
+      "name": "brute-force",
+      "category": "pentest",
+      "desc": "暴力破解（口令/凭据爆破）",
+      "rel": "_modules/brute-force",
+      "builtin": false,
+      "domain": "auth-social",
+      "rating": 3
+    },
+    {
+      "code": "card-key",
+      "name": "card-key",
+      "category": "crack",
+      "desc": "卡密生成与校验工作流",
+      "rel": "_modules/card-key",
+      "builtin": false,
+      "domain": "license-auth",
+      "rating": 6
+    },
+    {
+      "code": "cloud-audit-bypass",
+      "name": "cloud-audit-bypass",
+      "category": "pentest",
+      "desc": "云内容审计绕过（编码/拆分投递）",
+      "rel": "_modules/cloud-audit-bypass",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "code-inject",
+      "name": "code-inject",
+      "category": "reverse",
+      "desc": "代码注入（code cave/自动汇编/加载 DLL）",
+      "rel": "_modules/code-inject",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "code-obfuscate",
+      "name": "code-obfuscate",
+      "category": "reverse",
+      "desc": "代码混淆与还原（控制流/字符串加密）",
+      "rel": "_modules/code-obfuscate",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 6
+    },
+    {
+      "code": "coldbrew-api-reverse",
+      "name": "coldbrew-api-reverse",
+      "category": "reverse",
+      "desc": "前端签名、HAR、鉴权链路、加密参数还原时使用。",
+      "rel": "_modules/coldbrew-api-reverse",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 3
+    },
+    {
+      "code": "coldbrew-identity",
+      "name": "coldbrew-identity",
+      "category": "assist",
+      "desc": "用户问身份、名字、你是谁时使用。",
+      "rel": "_modules/coldbrew-identity",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 2
+    },
+    {
+      "code": "coldbrew-native-reverse",
+      "name": "coldbrew-native-reverse",
+      "category": "reverse",
+      "desc": "PE/ELF/SO、JNI、OLLVM、dump、补丁时使用。",
+      "rel": "_modules/coldbrew-native-reverse",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 4
+    },
+    {
+      "code": "coldbrew-protocol-reverse",
+      "name": "coldbrew-protocol-reverse",
+      "category": "reverse",
+      "desc": "自定义协议、TCP/UDP 帧、回放与字段还原时使用。",
+      "rel": "_modules/coldbrew-protocol-reverse",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 3
+    },
+    {
+      "code": "competition-ad-certificate-abuse",
+      "name": "competition-ad-certificate-abuse",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：AD CS 证书模板/EKU/SAN/PKINIT 证书滥用与提权链",
+      "rel": "_modules/competition-ad-certificate-abuse",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-agent-cloud",
+      "name": "competition-agent-cloud",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：AI agent 提示注入、MCP 工具链、云容器 CI/CD 与供应链投毒类赛题",
+      "rel": "_modules/competition-agent-cloud",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "competition-android-hooking",
+      "name": "competition-android-hooking",
+      "category": "reverse",
+      "desc": "CTF 沙箱子流：Android APK Frida hook、请求签名还原、SSL pinning 绕过与 JNI 边界分析",
+      "rel": "_modules/competition-android-hooking",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 7
+    },
+    {
+      "code": "competition-browser-persistence",
+      "name": "competition-browser-persistence",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：浏览器 cookie/localStorage/IndexedDB 等客户端状态持久化与会话重放",
+      "rel": "_modules/competition-browser-persistence",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-bundle-sourcemap-recovery",
+      "name": "competition-bundle-sourcemap-recovery",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：source map/构建 manifest/前端 bundle 还原隐藏路由与接口",
+      "rel": "_modules/competition-bundle-sourcemap-recovery",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-cloud-metadata-path",
+      "name": "competition-cloud-metadata-path",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：云 metadata 服务、实例身份与 link-local 凭据到提权的信任链",
+      "rel": "_modules/competition-cloud-metadata-path",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "competition-container-runtime",
+      "name": "competition-container-runtime",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：容器运行时分析、挂载密钥、sidecar 与入口漂移排查",
+      "rel": "_modules/competition-container-runtime",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "competition-crypto-mobile",
+      "name": "competition-crypto-mobile",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：编解码/隐写与 APK/IPA 移动信任边界、请求签名还原",
+      "rel": "_modules/competition-crypto-mobile",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-custom-protocol-replay",
+      "name": "competition-custom-protocol-replay",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：自定义二进制/文本协议还原、握手重建与有状态会话重放",
+      "rel": "_modules/competition-custom-protocol-replay",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-dpapi-credential-chain",
+      "name": "competition-dpapi-credential-chain",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：DPAPI 主密钥/vault/浏览器凭据库到可重放秘密的链路",
+      "rel": "_modules/competition-dpapi-credential-chain",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-file-parser-chain",
+      "name": "competition-file-parser-chain",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：文件上传/导入/预览/解压到反序列化解析链路追踪",
+      "rel": "_modules/competition-file-parser-chain",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-firmware-layout",
+      "name": "competition-firmware-layout",
+      "category": "reverse",
+      "desc": "CTF 沙箱子流：固件镜像分区表/启动链/升级包与设备信任边界分析",
+      "rel": "_modules/competition-firmware-layout",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 7
+    },
+    {
+      "code": "competition-forensic-timeline",
+      "name": "competition-forensic-timeline",
+      "category": "reverse",
+      "desc": "CTF 沙箱子流：DFIR 时间线重建与 EVTX/PCAP/注册表/内存跨工件关联",
+      "rel": "_modules/competition-forensic-timeline",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 7
+    },
+    {
+      "code": "competition-graphql-rpc-drift",
+      "name": "competition-graphql-rpc-drift",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：GraphQL/RPC schema 与 handler 漂移、隐藏操作还原",
+      "rel": "_modules/competition-graphql-rpc-drift",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-identity-windows",
+      "name": "competition-identity-windows",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：AD/Kerberos/LDAP 凭据材料与 Windows 主机横向移动链",
+      "rel": "_modules/competition-identity-windows",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-ios-runtime",
+      "name": "competition-ios-runtime",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：IPA 运行时分析、ObjC/Swift 方法追踪、Keychain 与 pinning 绕过",
+      "rel": "_modules/competition-ios-runtime",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-jwt-claim-confusion",
+      "name": "competition-jwt-claim-confusion",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：JWT/JWS/JWE 校验路径、alg 混淆、受众/签发者校验缺陷",
+      "rel": "_modules/competition-jwt-claim-confusion",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-k8s-control-plane",
+      "name": "competition-k8s-control-plane",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：K8s API 权限、SA 信任、RBAC 边界与 admission 行为分析",
+      "rel": "_modules/competition-k8s-control-plane",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "competition-kerberos-delegation",
+      "name": "competition-kerberos-delegation",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：Kerberos 委派（约束/非约束/RBCD/S4U）与票据接受链",
+      "rel": "_modules/competition-kerberos-delegation",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-kernel-container-escape",
+      "name": "competition-kernel-container-escape",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：内核攻击面、namespace/cgroup 边界与容器逃逸原语验证",
+      "rel": "_modules/competition-kernel-container-escape",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "competition-linux-credential-pivot",
+      "name": "competition-linux-credential-pivot",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：Linux 凭据工件、service token/SSH 材料与主机间横向链",
+      "rel": "_modules/competition-linux-credential-pivot",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-lsass-ticket-material",
+      "name": "competition-lsass-ticket-material",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：LSASS 内存秘密、Kerberos 票据缓存与可重放凭据提取",
+      "rel": "_modules/competition-lsass-ticket-material",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-mailbox-abuse",
+      "name": "competition-mailbox-abuse",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：企业邮箱滥用、OAuth 授权、收件箱/转发规则与钓鱼链",
+      "rel": "_modules/competition-mailbox-abuse",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-malware-config",
+      "name": "competition-malware-config",
+      "category": "reverse",
+      "desc": "CTF 沙箱子流：恶意样本配置还原、beacon 参数提取与 IOC 解码",
+      "rel": "_modules/competition-malware-config",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 7
+    },
+    {
+      "code": "competition-oauth-oidc-chain",
+      "name": "competition-oauth-oidc-chain",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：OAuth/OIDC 重定向、PKCE、token 交换到接受身份的全链",
+      "rel": "_modules/competition-oauth-oidc-chain",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-pcap-protocol",
+      "name": "competition-pcap-protocol",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：PCAP 会话重建、协议解码与包到进程关联",
+      "rel": "_modules/competition-pcap-protocol",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-prompt-injection",
+      "name": "competition-prompt-injection",
+      "category": "ai",
+      "desc": "CTF 沙箱子流：提示注入、检索投毒、记忆污染与 agent 数据外带",
+      "rel": "_modules/competition-prompt-injection",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 5
+    },
+    {
+      "code": "competition-queue-worker-drift",
+      "name": "competition-queue-worker-drift",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：队列/异步 worker/cron 重试行为与 payload 副作用链",
+      "rel": "_modules/competition-queue-worker-drift",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-race-condition-state-drift",
+      "name": "competition-race-condition-state-drift",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：竞态窗口、幂等失败、并发状态漂移类缺陷复现",
+      "rel": "_modules/competition-race-condition-state-drift",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-relay-coercion-chain",
+      "name": "competition-relay-coercion-chain",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：强制认证 coerce、NTLM relay 链与到提权的转换",
+      "rel": "_modules/competition-relay-coercion-chain",
+      "builtin": false,
+      "domain": "competition-identity",
+      "rating": 6
+    },
+    {
+      "code": "competition-request-normalization-smuggling",
+      "name": "competition-request-normalization-smuggling",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：解析器差分、HTTP 规范化缺口与请求走私路线",
+      "rel": "_modules/competition-request-normalization-smuggling",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-reverse-pwn",
+      "name": "competition-reverse-pwn",
+      "category": "reverse",
+      "desc": "CTF 沙箱子流：逆向/恶意样本/DFIR/固件/Pwn 与原生漏洞利用",
+      "rel": "_modules/competition-reverse-pwn",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 7
+    },
+    {
+      "code": "competition-runtime-routing",
+      "name": "competition-runtime-routing",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：反向代理、Host/转发头、vhost 路由与多节点路由解析",
+      "rel": "_modules/competition-runtime-routing",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-ssrf-metadata-pivot",
+      "name": "competition-ssrf-metadata-pivot",
+      "category": "pentest",
+      "desc": "CTF 沙箱子流：SSRF 可达性、内网探测、metadata 访问与凭据横向",
+      "rel": "_modules/competition-ssrf-metadata-pivot",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 7
+    },
+    {
+      "code": "competition-stego-media",
+      "name": "competition-stego-media",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：图像/音频/视频/文档/容器隐写载荷还原",
+      "rel": "_modules/competition-stego-media",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-supply-chain",
+      "name": "competition-supply-chain",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：CI/CD、registry、依赖漂移、制品溯源与发布链篡改",
+      "rel": "_modules/competition-supply-chain",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-template-render-path",
+      "name": "competition-template-render-path",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：SSR/模板渲染/hydration 边界与模板到 handler 执行缺口",
+      "rel": "_modules/competition-template-render-path",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-web-runtime",
+      "name": "competition-web-runtime",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：Web/API/SSR/队列应用调试、隐藏路由与前后端行为分歧",
+      "rel": "_modules/competition-web-runtime",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 7
+    },
+    {
+      "code": "competition-websocket-runtime",
+      "name": "competition-websocket-runtime",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：WebSocket/SSE 握手、订阅状态与实时帧驱动行为",
+      "rel": "_modules/competition-websocket-runtime",
+      "builtin": false,
+      "domain": "competition-application",
+      "rating": 6
+    },
+    {
+      "code": "competition-windows-pivot",
+      "name": "competition-windows-pivot",
+      "category": "assist",
+      "desc": "CTF 沙箱子流：Kerberos/WinRM/SMB/RDP 凭据重放与主机间横向",
+      "rel": "_modules/competition-windows-pivot",
+      "builtin": false,
+      "domain": "competition-platform",
+      "rating": 6
+    },
+    {
+      "code": "crack-keygen",
+      "name": "crack-keygen",
+      "category": "crack",
+      "desc": "软件授权分析（keygen/补丁/license 旁路）",
+      "rel": "_modules/crack-keygen",
+      "builtin": false,
+      "domain": "keygen-patching",
+      "rating": 6
+    },
+    {
+      "code": "creative-writing",
+      "name": "creative-writing",
+      "category": "assist",
+      "desc": "创意写作辅助",
+      "rel": "_modules/creative-writing",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 2
+    },
+    {
+      "code": "crypto-tools",
+      "name": "crypto-tools",
+      "category": "pentest",
+      "desc": "加密货币工具箱（钱包/合约/MEV）",
+      "rel": "_modules/crypto-tools",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 3
+    },
+    {
+      "code": "ctf-sandbox-orchestrator",
+      "name": "ctf-sandbox-orchestrator",
+      "category": "assist",
+      "desc": "CTF 沙箱总控：默认把赛题基础设施/二进制/身份视为沙箱内目标，统一分发逆向/Pwn/取证/云容器/身份类子工作流",
+      "rel": "_modules/ctf-sandbox-orchestrator",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 7
+    },
+    {
+      "code": "data-exfil",
+      "name": "data-exfil",
+      "category": "pentest",
+      "desc": "数据外带（DNS/ICMP 隧道/隐写）",
+      "rel": "_modules/data-exfil",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 3
+    },
+    {
+      "code": "diagram-generator",
+      "name": "diagram-generator",
+      "category": "reverse",
+      "desc": "从自然语言/代码/schema 生成、校验并渲染流程图等图表",
+      "rel": "_modules/diagram-generator",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "dma-attack",
+      "name": "dma-attack",
+      "category": "assist",
+      "desc": "PCIe DMA 威胁建模与 FPGA 内存访问防御研究（pcileech/IOMMU/页表遍历）",
+      "rel": "_modules/dma-attack",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "dma-cardkey-evo-crack",
+      "name": "dma-cardkey-evo-crack",
+      "category": "crack",
+      "desc": "DMA 卡密授权链逆向与本地化绕过",
+      "rel": "_modules/dma-cardkey-evo-crack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 10
+    },
+    {
+      "code": "dn-decompile",
+      "name": "dn-decompile",
+      "category": "reverse",
+      "desc": ".NET 程序集反编译（ILSpy/dotPeek）",
+      "rel": "_modules/dn-decompile",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 3
+    },
+    {
+      "code": "dn-edit",
+      "name": "dn-edit",
+      "category": "reverse",
+      "desc": ".NET IL 编辑修改",
+      "rel": "_modules/dn-edit",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 3
+    },
+    {
+      "code": "dn-save",
+      "name": "dn-save",
+      "category": "reverse",
+      "desc": ".NET 程序集保存回写",
+      "rel": "_modules/dn-save",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 3
+    },
+    {
+      "code": "dns-enum",
+      "name": "dns-enum",
+      "category": "pentest",
+      "desc": "DNS 枚举（子域/记录收集）",
+      "rel": "_modules/dns-enum",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 4
+    },
+    {
+      "code": "docs-generator",
+      "name": "docs-generator",
+      "category": "assist",
+      "desc": "面向任务的技术文档生成：README/API/架构文档，渐进式披露",
+      "rel": "_modules/docs-generator",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 8
+    },
+    {
+      "code": "dotnet-bypass",
+      "name": "dotnet-bypass",
+      "category": "crack",
+      "desc": ".NET 授权绕过（Mono/Unity 许可）",
+      "rel": "_modules/dotnet-bypass",
+      "builtin": false,
+      "domain": "keygen-patching",
+      "rating": 3
+    },
+    {
+      "code": "dotnet-reverse",
+      "name": "dotnet-reverse",
+      "category": "reverse",
+      "desc": ".NET / C# 二进制逆向。当目标是 .NET assembly（PE 头含 CLR、.exe/.dll 托管程序）",
+      "rel": "_modules/dotnet-reverse",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 9
+    },
+    {
+      "code": "dsl-vm-reverse",
+      "name": "dsl-vm-reverse",
+      "category": "reverse",
+      "desc": "自定义 JS/WASM DSL 虚拟机逆向：还原操作码、状态转移与运行时行为",
+      "rel": "_modules/dsl-vm-reverse",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 9
+    },
+    {
+      "code": "dynamic-instrumentation",
+      "name": "dynamic-instrumentation",
+      "category": "reverse",
+      "desc": "Frida 动态 Hook、内存补丁、API 参数追踪与反调试绕过脚本生成",
+      "rel": "_modules/dynamic-instrumentation",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 6
+    },
+    {
+      "code": "edr-bypass-re",
+      "name": "edr-bypass-re",
+      "category": "assist",
+      "desc": "EDR 绕过：从防御方实现逆向到红队绕过",
+      "rel": "_modules/edr-bypass-re",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "elf-local-auth-patcher",
+      "name": "elf-local-auth-patcher",
+      "category": "assist",
+      "desc": "自有/授权 APK/ELF 本地测试授权替换：离线 license/卡密校验替换与 AArch64 补丁",
+      "rel": "_modules/elf-local-auth-patcher",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 10
+    },
+    {
+      "code": "encrypt-detect",
+      "name": "encrypt-detect",
+      "category": "reverse",
+      "desc": "流量加密识别（AES/XOR/Base64 模式）",
+      "rel": "_modules/encrypt-detect",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 4
+    },
+    {
+      "code": "eni-api-assurance-lane",
+      "name": "eni-api-assurance-lane",
+      "category": "assist",
+      "desc": "仅文档：API 保证工作流（eni-solo 顺序执行）",
+      "rel": "_modules/eni-api-assurance-lane",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-api-security",
+      "name": "eni-api-security",
+      "category": "pentest",
+      "desc": "仅文档：API 安全测试（10 阶段流程）",
+      "rel": "_modules/eni-api-security",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 8
+    },
+    {
+      "code": "eni-apk-reverse",
+      "name": "eni-apk-reverse",
+      "category": "reverse",
+      "desc": "APK 逆向 CLI 作业：解包/Java 反编译/smali 修改/重打包/Frida Hook，按需切 so/native 分析",
+      "rel": "_modules/eni-apk-reverse",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 9
+    },
+    {
+      "code": "eni-architecture-workflow",
+      "name": "eni-architecture-workflow",
+      "category": "assist",
+      "desc": "仅文档：架构清单/组件边界/数据流与威胁审查",
+      "rel": "_modules/eni-architecture-workflow",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-attack-chain",
+      "name": "eni-attack-chain",
+      "category": "assist",
+      "desc": "仅文档：多阶段攻击链编排角色与路由原则",
+      "rel": "_modules/eni-attack-chain",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 9
+    },
+    {
+      "code": "eni-binary-diff",
+      "name": "eni-binary-diff",
+      "category": "assist",
+      "desc": "跨版本符号迁移与二进制差分方法论（仅文档）",
+      "rel": "_modules/eni-binary-diff",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "eni-blackbox-reverse-boost",
+      "name": "eni-blackbox-reverse-boost",
+      "category": "reverse",
+      "desc": "离线黑盒逆向与本地 Windows 二进制安全审计增强（寒霜触发）",
+      "rel": "_modules/eni-blackbox-reverse-boost",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "eni-browser-automation",
+      "name": "eni-browser-automation",
+      "category": "assist",
+      "desc": "统一自动化入口：浏览器自动化（Playwright）与 Windows 桌面应用自动化",
+      "rel": "_modules/eni-browser-automation",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 8
+    },
+    {
+      "code": "eni-browser-research-workflow",
+      "name": "eni-browser-research-workflow",
+      "category": "assist",
+      "desc": "仅文档：Playwright 式浏览器研究与自动化（状态/等待/捕获）",
+      "rel": "_modules/eni-browser-research-workflow",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 3
+    },
+    {
+      "code": "eni-burp-mcp",
+      "name": "eni-burp-mcp",
+      "category": "ai",
+      "desc": "Burp Suite MCP 参考与工具编排",
+      "rel": "_modules/eni-burp-mcp",
+      "builtin": false,
+      "domain": "mcp-rag",
+      "rating": 3
+    },
+    {
+      "code": "eni-case-lab",
+      "name": "eni-case-lab",
+      "category": "assist",
+      "desc": "可复现技术研究工作区：逆向/渗透/内存/模糊测试/样本分析",
+      "rel": "_modules/eni-case-lab",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 5
+    },
+    {
+      "code": "eni-cf-security-lab-router",
+      "name": "eni-cf-security-lab-router",
+      "category": "assist",
+      "desc": "CF/穿越火线安全实验室路由：外挂/透视/自瞄/内存/Hook/反作弊话题统一入口",
+      "rel": "_modules/eni-cf-security-lab-router",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 5
+    },
+    {
+      "code": "eni-cloud-container-workflow",
+      "name": "eni-cloud-container-workflow",
+      "category": "assist",
+      "desc": "仅文档：云/容器/K8s/镜像/IaC/身份与合规评估",
+      "rel": "_modules/eni-cloud-container-workflow",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 3
+    },
+    {
+      "code": "eni-code-security-workflow",
+      "name": "eni-code-security-workflow",
+      "category": "assist",
+      "desc": "仅文档：源码/依赖/供应链、SAST/SCA 与修复工作流",
+      "rel": "_modules/eni-code-security-workflow",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-core",
+      "name": "eni-core",
+      "category": "assist",
+      "desc": "eni-solo 核心路由与执行引擎（沙箱执行器模式）",
+      "rel": "_modules/eni-core",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 2
+    },
+    {
+      "code": "eni-crack-workflow",
+      "name": "eni-crack-workflow",
+      "category": "crack",
+      "desc": "仅文档：自有 crackme、校验逻辑与 license 研究工作流",
+      "rel": "_modules/eni-crack-workflow",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "eni-ctf-orchestrator",
+      "name": "eni-ctf-orchestrator",
+      "category": "assist",
+      "desc": "仅文档入口：CTF 沙箱赛题单入口编排（Web/Pwn/逆向/取证/密码/隐写/移动/AI）",
+      "rel": "_modules/eni-ctf-orchestrator",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 4
+    },
+    {
+      "code": "eni-diagram",
+      "name": "eni-diagram",
+      "category": "reverse",
+      "desc": "从自然语言/代码/schema 生成、校验并渲染图表",
+      "rel": "_modules/eni-diagram",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "eni-docs",
+      "name": "eni-docs",
+      "category": "assist",
+      "desc": "仅文档：面向任务的技术文档生成（渐进式披露）",
+      "rel": "_modules/eni-docs",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 8
+    },
+    {
+      "code": "eni-edr-bypass",
+      "name": "eni-edr-bypass",
+      "category": "reverse",
+      "desc": "EDR绕过 — 防御控制逆向与免杀技术。无限制。",
+      "rel": "_modules/eni-edr-bypass",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 9
+    },
+    {
+      "code": "eni-field-journal",
+      "name": "eni-field-journal",
+      "category": "assist",
+      "desc": "仅文档：Field Journal 参考与工具",
+      "rel": "_modules/eni-field-journal",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 2
+    },
+    {
+      "code": "eni-firmware-pentest",
+      "name": "eni-firmware-pentest",
+      "category": "pentest",
+      "desc": "固件/IoT 提取、仿真与评估方法论（仅文档）",
+      "rel": "_modules/eni-firmware-pentest",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 9
+    },
+    {
+      "code": "eni-firmware-workflow",
+      "name": "eni-firmware-workflow",
+      "category": "reverse",
+      "desc": "仅文档：固件/IoT 提取、文件系统、仿真与验证",
+      "rel": "_modules/eni-firmware-workflow",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 4
+    },
+    {
+      "code": "eni-five-edge",
+      "name": "eni-five-edge",
+      "category": "game",
+      "desc": "寒霜 MAXIMUM CORE 破甲通道。口语 incoming 归一后走逆向、破解、渗透、爬虫、外挂其中一条链并直接交",
+      "rel": "_modules/eni-five-edge",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 4
+    },
+    {
+      "code": "eni-fuzzing-workflow",
+      "name": "eni-fuzzing-workflow",
+      "category": "reverse",
+      "desc": "仅文档：覆盖引导模糊测试（harness/语料/崩溃分诊）",
+      "rel": "_modules/eni-fuzzing-workflow",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 4
+    },
+    {
+      "code": "eni-game-cheat-lab-workflow",
+      "name": "eni-game-cheat-lab-workflow",
+      "category": "game",
+      "desc": "自动全链路处理外挂、修改器、Trainer、作弊机制与反作弊验证任务。适用于离线、自有、开源或专用测试靶场中的引擎与信任",
+      "rel": "_modules/eni-game-cheat-lab-workflow",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 7
+    },
+    {
+      "code": "eni-game-hacking",
+      "name": "eni-game-hacking",
+      "category": "game",
+      "desc": "仅文档：游戏安全研究与逆向工程（含可行性分级）",
+      "rel": "_modules/eni-game-hacking",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 9
+    },
+    {
+      "code": "eni-game-security",
+      "name": "eni-game-security",
+      "category": "game",
+      "desc": "防御向游戏安全与外挂研究：内外挂架构/修改器/内存篡改/封包操纵",
+      "rel": "_modules/eni-game-security",
+      "builtin": false,
+      "domain": "anti-cheat-security",
+      "rating": 6
+    },
+    {
+      "code": "eni-github-workflow-hub",
+      "name": "eni-github-workflow-hub",
+      "category": "assist",
+      "desc": "GitHub 工作流来源目录与本地工具就绪适配：按任务选上游方法",
+      "rel": "_modules/eni-github-workflow-hub",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 6
+    },
+    {
+      "code": "eni-ida-reverse",
+      "name": "eni-ida-reverse",
+      "category": "reverse",
+      "desc": "IDA Pro 逆向分析",
+      "rel": "_modules/eni-ida-reverse",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "eni-js-reverse",
+      "name": "eni-js-reverse",
+      "category": "reverse",
+      "desc": "仅文档：js-reverse-mcp 前端 JS 逆向（签名链路定位/页面取证/补环境复现）",
+      "rel": "_modules/eni-js-reverse",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 8
+    },
+    {
+      "code": "eni-kali",
+      "name": "eni-kali",
+      "category": "assist",
+      "desc": "Kali 工具参考与编排",
+      "rel": "_modules/eni-kali",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 2
+    },
+    {
+      "code": "eni-license-security",
+      "name": "eni-license-security",
+      "category": "crack",
+      "desc": "授权/激活/订阅/卡密类校验分析与替换",
+      "rel": "_modules/eni-license-security",
+      "builtin": false,
+      "domain": "network-vip",
+      "rating": 7
+    },
+    {
+      "code": "eni-llm-security",
+      "name": "eni-llm-security",
+      "category": "ai",
+      "desc": "仅文档：LLM/AI 安全测试工作流",
+      "rel": "_modules/eni-llm-security",
+      "builtin": false,
+      "domain": "llm-security",
+      "rating": 8
+    },
+    {
+      "code": "eni-malware-analysis",
+      "name": "eni-malware-analysis",
+      "category": "reverse",
+      "desc": "仅文档：恶意样本六阶段分析流程",
+      "rel": "_modules/eni-malware-analysis",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "eni-malware-ir-workflow",
+      "name": "eni-malware-ir-workflow",
+      "category": "reverse",
+      "desc": "仅文档：离线样本分诊、能力分析、内存取证、时间线与 IOC 打包",
+      "rel": "_modules/eni-malware-ir-workflow",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 4
+    },
+    {
+      "code": "eni-memory-forensics",
+      "name": "eni-memory-forensics",
+      "category": "reverse",
+      "desc": "跨平台进程内存与取证：dump/堆/指针链/签名/结构分析",
+      "rel": "_modules/eni-memory-forensics",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 6
+    },
+    {
+      "code": "eni-mobile-reverse",
+      "name": "eni-mobile-reverse",
+      "category": "reverse",
+      "desc": "仅文档：移动逆向四阶段工作流（信息收集→动态→静态→产出）",
+      "rel": "_modules/eni-mobile-reverse",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 8
+    },
+    {
+      "code": "eni-mobile-security-workflow",
+      "name": "eni-mobile-security-workflow",
+      "category": "assist",
+      "desc": "仅文档：Android/iOS 静动态分析（MobSF 式分诊 + Frida 式动态）",
+      "rel": "_modules/eni-mobile-security-workflow",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-patch-diff-exploit",
+      "name": "eni-patch-diff-exploit",
+      "category": "pentest",
+      "desc": "补丁差分分析与受控 N-day 研究方法论（仅文档）",
+      "rel": "_modules/eni-patch-diff-exploit",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 9
+    },
+    {
+      "code": "eni-pentest-advanced",
+      "name": "eni-pentest-advanced",
+      "category": "pentest",
+      "desc": "证据驱动渗透与攻击面工程（进阶）",
+      "rel": "_modules/eni-pentest-advanced",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "eni-pentest-tools",
+      "name": "eni-pentest-tools",
+      "category": "pentest",
+      "desc": "渗透测试工具链选型与编排参考（仅文档）",
+      "rel": "_modules/eni-pentest-tools",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "eni-pentest-workflow",
+      "name": "eni-pentest-workflow",
+      "category": "pentest",
+      "desc": "证据驱动的授权渗透与攻击面验证（OWASP/Nuclei/ZAP 方法适配）",
+      "rel": "_modules/eni-pentest-workflow",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 4
+    },
+    {
+      "code": "eni-radare2",
+      "name": "eni-radare2",
+      "category": "assist",
+      "desc": "radare2 命令行二进制分析：反汇编/函数/字符串/补丁/r2pipe 脚本",
+      "rel": "_modules/eni-radare2",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "eni-redteam-ad-detail-pack",
+      "name": "eni-redteam-ad-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：Active Directory 域渗透测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-ad-detail-pack",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-api-detail-pack",
+      "name": "eni-redteam-api-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：API 安全测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-api-detail-pack",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-auth-detail-pack",
+      "name": "eni-redteam-auth-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：认证与授权漏洞测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-auth-detail-pack",
+      "builtin": false,
+      "domain": "auth-social",
+      "rating": 7
+    },
+    {
+      "code": "eni-redteam-cache-poison-detail-pack",
+      "name": "eni-redteam-cache-poison-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：Web 缓存投毒测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-cache-poison-detail-pack",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-clickjacking-detail-pack",
+      "name": "eni-redteam-clickjacking-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：点击劫持测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-clickjacking-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 5
+    },
+    {
+      "code": "eni-redteam-cloud-detail-pack",
+      "name": "eni-redteam-cloud-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：云安全测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-cloud-detail-pack",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-cmdi-detail-pack",
+      "name": "eni-redteam-cmdi-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：OS 命令注入测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-cmdi-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 7
+    },
+    {
+      "code": "eni-redteam-code-audit-detail-pack",
+      "name": "eni-redteam-code-audit-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：源码安全审计测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-code-audit-detail-pack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "eni-redteam-container-detail-pack",
+      "name": "eni-redteam-container-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：容器与编排安全测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-container-detail-pack",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-cors-miscfg-detail-pack",
+      "name": "eni-redteam-cors-miscfg-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：CORS 配置错误测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-cors-miscfg-detail-pack",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-crypto-detail-pack",
+      "name": "eni-redteam-crypto-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：密码学弱点测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-crypto-detail-pack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-csrf-detail-pack",
+      "name": "eni-redteam-csrf-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：CSRF 跨站请求伪造测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-csrf-detail-pack",
+      "builtin": false,
+      "domain": "auth-social",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-cve-lookup",
+      "name": "eni-redteam-cve-lookup",
+      "category": "pentest",
+      "desc": "仅文档：CVE 查询与适用性评估",
+      "rel": "_modules/eni-redteam-cve-lookup",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "eni-redteam-deserialize-detail-pack",
+      "name": "eni-redteam-deserialize-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：反序列化漏洞测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-deserialize-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-doctrine",
+      "name": "eni-redteam-doctrine",
+      "category": "pentest",
+      "desc": "仅文档：红队模式治理与指挥决策规则",
+      "rel": "_modules/eni-redteam-doctrine",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "eni-redteam-evasion-detail-pack",
+      "name": "eni-redteam-evasion-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：防御规避与绕过测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-evasion-detail-pack",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-file-detail-pack",
+      "name": "eni-redteam-file-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：文件上传/包含/读取漏洞测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-file-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-injection-detail-pack",
+      "name": "eni-redteam-injection-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：通用注入测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-injection-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-logic-detail-pack",
+      "name": "eni-redteam-logic-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：业务逻辑漏洞测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-logic-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-mobile-detail-pack",
+      "name": "eni-redteam-mobile-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：移动应用安全测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-mobile-detail-pack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-network-detail-pack",
+      "name": "eni-redteam-network-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：网络层渗透测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-network-detail-pack",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 5
+    },
+    {
+      "code": "eni-redteam-open-redirect-detail-pack",
+      "name": "eni-redteam-open-redirect-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：开放重定向测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-open-redirect-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-payload-detail-pack",
+      "name": "eni-redteam-payload-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：Payload 构造与武器化测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-payload-detail-pack",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-postex-detail-pack",
+      "name": "eni-redteam-postex-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：后渗透利用测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-postex-detail-pack",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-recon-detail-pack",
+      "name": "eni-redteam-recon-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：信息收集与侦察测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-recon-detail-pack",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-recon-intake",
+      "name": "eni-redteam-recon-intake",
+      "category": "pentest",
+      "desc": "仅文档：首次接触目标的侦察受理与分流",
+      "rel": "_modules/eni-redteam-recon-intake",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-reverse-detail-pack",
+      "name": "eni-redteam-reverse-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：逆向工程分析测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-reverse-detail-pack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "eni-redteam-sqli-detail-pack",
+      "name": "eni-redteam-sqli-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：SQL 注入测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-sqli-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-ssrf-detail-pack",
+      "name": "eni-redteam-ssrf-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：SSRF 服务端请求伪造测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-ssrf-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-ssti-detail-pack",
+      "name": "eni-redteam-ssti-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：SSTI 服务端模板注入测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-ssti-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 7
+    },
+    {
+      "code": "eni-redteam-subdomain-takeover-detail-pack",
+      "name": "eni-redteam-subdomain-takeover-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：子域名接管测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-subdomain-takeover-detail-pack",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-web-detail-pack",
+      "name": "eni-redteam-web-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：Web 综合渗透测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-web-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-xss-detail-pack",
+      "name": "eni-redteam-xss-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：XSS 跨站脚本测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-xss-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-redteam-xxe-detail-pack",
+      "name": "eni-redteam-xxe-detail-pack",
+      "category": "pentest",
+      "desc": "仅文档领域包：XXE XML 外部实体注入测试的路由与边界指引",
+      "rel": "_modules/eni-redteam-xxe-detail-pack",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "eni-reverse-deep",
+      "name": "eni-reverse-deep",
+      "category": "reverse",
+      "desc": "深度逆向：PE/ELF/Mach-O/固件/驱动/APK/.NET/Go/Rust/IL2CPP/加壳二进制",
+      "rel": "_modules/eni-reverse-deep",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "eni-reverse-ref",
+      "name": "eni-reverse-ref",
+      "category": "reverse",
+      "desc": "仅文档：逆向工程参考（Reverse Engineering）",
+      "rel": "_modules/eni-reverse-ref",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "eni-reverse-workflow",
+      "name": "eni-reverse-workflow",
+      "category": "reverse",
+      "desc": "深度证据驱动逆向工作流：PE/ELF/Mach-O/固件/驱动/字节码/协议",
+      "rel": "_modules/eni-reverse-workflow",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "eni-reverselab-bridge",
+      "name": "eni-reverselab-bridge",
+      "category": "reverse",
+      "desc": "原创外部依赖桥接：把 Open ReverseLab（LING71671/open-reverselab，GPL-3.0",
+      "rel": "_modules/eni-reverselab-bridge",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "eni-reverselab-platform",
+      "name": "eni-reverselab-platform",
+      "category": "reverse",
+      "desc": "开源逆向实验台：197 篇知识库 + 43 个 MCP 工具 + 攻击网络图路由",
+      "rel": "_modules/eni-reverselab-platform",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "eni-scraper-workflow",
+      "name": "eni-scraper-workflow",
+      "category": "assist",
+      "desc": "统一结构化采集：Scrapy 式请求优先 + Playwright 浏览器兜底，含去重与质量门",
+      "rel": "_modules/eni-scraper-workflow",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 3
+    },
+    {
+      "code": "eni-software-workflow",
+      "name": "eni-software-workflow",
+      "category": "assist",
+      "desc": "仅文档：软件实现、调试与交付工作流",
+      "rel": "_modules/eni-software-workflow",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-supply-chain",
+      "name": "eni-supply-chain",
+      "category": "assist",
+      "desc": "仅文档：供应链安全评估",
+      "rel": "_modules/eni-supply-chain",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "eni-supply-chain-assurance-lane",
+      "name": "eni-supply-chain-assurance-lane",
+      "category": "assist",
+      "desc": "仅文档：供应链保证工作流（eni-solo 顺序执行）",
+      "rel": "_modules/eni-supply-chain-assurance-lane",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 4
+    },
+    {
+      "code": "eni-unified-router",
+      "name": "eni-unified-router",
+      "category": "assist",
+      "desc": "eni-solo 确定性路由器：每次任务开始时选定唯一工作流并加载主技能",
+      "rel": "_modules/eni-unified-router",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 8
+    },
+    {
+      "code": "eni-universal-workflow",
+      "name": "eni-universal-workflow",
+      "category": "assist",
+      "desc": "eni-solo 默认沙箱执行器工作流",
+      "rel": "_modules/eni-universal-workflow",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 3
+    },
+    {
+      "code": "eni-unpack-reverse-lab",
+      "name": "eni-unpack-reverse-lab",
+      "category": "reverse",
+      "desc": "离线 Windows PE 加壳/脱壳分诊与证据驱动逆向（寒霜触发）",
+      "rel": "_modules/eni-unpack-reverse-lab",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 8
+    },
+    {
+      "code": "entity-list",
+      "name": "entity-list",
+      "category": "game",
+      "desc": "游戏实体对象枚举",
+      "rel": "_modules/entity-list",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 4
+    },
+    {
+      "code": "esp-law",
+      "name": "esp-law",
+      "category": "reverse",
+      "desc": "ESP 定位原始入口点（pushad/popad）",
+      "rel": "_modules/esp-law",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 3
+    },
+    {
+      "code": "evasion",
+      "name": "evasion",
+      "category": "pentest",
+      "desc": "防御规避（AMSI/ETW 补丁/免杀）",
+      "rel": "_modules/evasion",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 5
+    },
+    {
+      "code": "exact-scan",
+      "name": "exact-scan",
+      "category": "game",
+      "desc": "精确数值内存扫描（金币/血量/弹药）",
+      "rel": "_modules/exact-scan",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 3
+    },
+    {
+      "code": "exec-hook",
+      "name": "exec-hook",
+      "category": "reverse",
+      "desc": "执行流重定向（Hook/跳板/拦截）",
+      "rel": "_modules/exec-hook",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 3
+    },
+    {
+      "code": "exploit-dev",
+      "name": "exploit-dev",
+      "category": "pentest",
+      "desc": "漏洞开发（shellcode/ROP/格式化字符串）",
+      "rel": "_modules/exploit-dev",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 4
+    },
+    {
+      "code": "file-backup",
+      "name": "file-backup",
+      "category": "reverse",
+      "desc": "修改前备份（.bak/快照）",
+      "rel": "_modules/file-backup",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 2
+    },
+    {
+      "code": "finance-movement",
+      "name": "finance-movement",
+      "category": "assist",
+      "desc": "金融系统研究：资金流动/洗钱/空壳公司/混币/逃税/银行欺诈触发词",
+      "rel": "_modules/finance-movement",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 4
+    },
+    {
+      "code": "firmware-pentest",
+      "name": "firmware-pentest",
+      "category": "pentest",
+      "desc": "固件/IoT 渗透链：提取、仿真、评估全流程",
+      "rel": "_modules/firmware-pentest",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 9
+    },
+    {
+      "code": "frendysanusi-claude-pentest-skills",
+      "name": "frendysanusi-claude-pentest-skills",
+      "category": "pentest",
+      "desc": "结构化 Web 渗透（OWASP/6 门验证/报告）",
+      "rel": "_modules/frendysanusi-claude-pentest-skills",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "frida-intercept",
+      "name": "frida-intercept",
+      "category": "pentest",
+      "desc": "Frida 钩网络函数（send/recv 抓包）",
+      "rel": "_modules/frida-intercept",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 4
+    },
+    {
+      "code": "full-crack",
+      "name": "full-crack",
+      "category": "crack",
+      "desc": "完整破解工作流",
+      "rel": "_modules/full-crack",
+      "builtin": false,
+      "domain": "keygen-patching",
+      "rating": 5
+    },
+    {
+      "code": "full-game",
+      "name": "full-game",
+      "category": "game",
+      "desc": "完整游戏增强链",
+      "rel": "_modules/full-game",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 5
+    },
+    {
+      "code": "full-pentest",
+      "name": "full-pentest",
+      "category": "pentest",
+      "desc": "完整渗透流程",
+      "rel": "_modules/full-pentest",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 4
+    },
+    {
+      "code": "full-reverse",
+      "name": "full-reverse",
+      "category": "reverse",
+      "desc": "完整逆向链",
+      "rel": "_modules/full-reverse",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 3
+    },
+    {
+      "code": "full-unpack",
+      "name": "full-unpack",
+      "category": "reverse",
+      "desc": "完整脱壳链",
+      "rel": "_modules/full-unpack",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 3
+    },
+    {
+      "code": "function-decompile",
+      "name": "function-decompile",
+      "category": "reverse",
+      "desc": "函数反编译与关键逻辑识别",
+      "rel": "_modules/function-decompile",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 3
+    },
+    {
+      "code": "game-assets",
+      "name": "game-assets",
+      "category": "assist",
+      "desc": "用 Meowa 制作/升级/动画化生产级游戏素材（像素与高清精灵/多视角/UI 表）",
+      "rel": "_modules/game-assets",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 9
+    },
+    {
+      "code": "game-cheat",
+      "name": "game-cheat",
+      "category": "game",
+      "desc": "游戏辅助工具箱（内存/ESP/封包）",
+      "rel": "_modules/game-cheat",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 6
+    },
+    {
+      "code": "game-engine",
+      "name": "game-engine",
+      "category": "assist",
+      "desc": "游戏引擎内部与引擎安全研究：Unreal/Unity/Source/Godot/自研引擎",
+      "rel": "_modules/game-engine",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 8
+    },
+    {
+      "code": "game-hacking",
+      "name": "game-hacking",
+      "category": "game",
+      "desc": "游戏黑客技术分类与威胁建模：内存访问/代码注入/覆盖层/输入模拟",
+      "rel": "_modules/game-hacking",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 8
+    },
+    {
+      "code": "ghidra-rpc",
+      "name": "ghidra-rpc",
+      "category": "reverse",
+      "desc": "Ghidra RPC 远程逆向自动化",
+      "rel": "_modules/ghidra-rpc",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 10
+    },
+    {
+      "code": "gpt-cursor-register-suite",
+      "name": "gpt-cursor-register-suite",
+      "category": "crack",
+      "desc": "GPT/Cursor 注册机套件：协议注册+接码OTP+Turnstile打码+sentinel PoW+TLS指纹+Cursor授权注入",
+      "rel": "_modules/gpt-cursor-register-suite",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": null
+    },
+    {
+      "code": "graphics-api",
+      "name": "graphics-api",
+      "category": "game",
+      "desc": "图形 API 钩取与覆盖层渲染",
+      "rel": "_modules/graphics-api",
+      "builtin": false,
+      "domain": "overlay-rendering",
+      "rating": 8
+    },
+    {
+      "code": "grill-me",
+      "name": "grill-me",
+      "category": "assist",
+      "desc": "拷问式质询（单题深挖）",
+      "rel": "_modules/grill-me",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 2
+    },
+    {
+      "code": "grill-with-docs",
+      "name": "grill-with-docs",
+      "category": "assist",
+      "desc": "带文档拷问质询",
+      "rel": "_modules/grill-with-docs",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 2
+    },
+    {
+      "code": "grilling",
+      "name": "grilling",
+      "category": "assist",
+      "desc": "对计划/决策持续追问施压",
+      "rel": "_modules/grilling",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 6
+    },
+    {
+      "code": "hardware-breakpoint-observation",
+      "name": "hardware-breakpoint-observation",
+      "category": "reverse",
+      "desc": "硬件断点观察工作流",
+      "rel": "_modules/hardware-breakpoint-observation",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 6
+    },
+    {
+      "code": "hatch-pet",
+      "name": "hatch-pet",
+      "category": "assist",
+      "desc": "Codex 宠物精灵制作（9 行动画/装配/QA）",
+      "rel": "_modules/hatch-pet",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 9
+    },
+    {
+      "code": "hidden-rx-memory-reconstruction",
+      "name": "hidden-rx-memory-reconstruction",
+      "category": "reverse",
+      "desc": "隐藏 RX 内存运行时重建",
+      "rel": "_modules/hidden-rx-memory-reconstruction",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 6
+    },
+    {
+      "code": "higgsfield-seedance-2-5",
+      "name": "higgsfield-seedance-2-5",
+      "category": "assist",
+      "desc": "Seedance 2.5 视频提示词导演",
+      "rel": "_modules/higgsfield-seedance-2-5",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 9
+    },
+    {
+      "code": "hotspot-radar-workflow-skill",
+      "name": "hotspot-radar-workflow-skill",
+      "category": "assist",
+      "desc": "热点雷达选题工作流",
+      "rel": "_modules/hotspot-radar-workflow-skill",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 8
+    },
+    {
+      "code": "iac-security",
+      "name": "iac-security",
+      "category": "pentest",
+      "desc": "IaC 安全扫描（Terraform/K8s/Helm）",
+      "rel": "_modules/iac-security",
+      "builtin": false,
+      "domain": "api-cloud",
+      "rating": 9
+    },
+    {
+      "code": "iat-rebuild",
+      "name": "iat-rebuild",
+      "category": "reverse",
+      "desc": "导入表重建与修复",
+      "rel": "_modules/iat-rebuild",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 4
+    },
+    {
+      "code": "ida-reverse",
+      "name": "ida-reverse",
+      "category": "reverse",
+      "desc": "IDA Pro 逆向分析：含已知问题与反思清单",
+      "rel": "_modules/ida-reverse",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "identity-docs",
+      "name": "identity-docs",
+      "category": "assist",
+      "desc": "身份与证件系统研究：身份证/护照/签证/文凭模板与防伪（伪造触发词）",
+      "rel": "_modules/identity-docs",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 4
+    },
+    {
+      "code": "import-analyze",
+      "name": "import-analyze",
+      "category": "reverse",
+      "desc": "导入表分析（DLL 依赖）",
+      "rel": "_modules/import-analyze",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 4
+    },
+    {
+      "code": "indirect-prompt-injection",
+      "name": "indirect-prompt-injection",
+      "category": "ai",
+      "desc": "间接提示注入执行",
+      "rel": "_modules/indirect-prompt-injection",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 8
+    },
+    {
+      "code": "jmp-modify",
+      "name": "jmp-modify",
+      "category": "reverse",
+      "desc": "条件跳转改无条件（je→jmp）",
+      "rel": "_modules/jmp-modify",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "js-reverse",
+      "name": "js-reverse",
+      "category": "reverse",
+      "desc": "JavaScript 逆向：混淆还原、签名/HMAC 定位、浏览器环境补丁与前端加密提取",
+      "rel": "_modules/js-reverse",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 9
+    },
+    {
+      "code": "jump-patch",
+      "name": "jump-patch",
+      "category": "reverse",
+      "desc": "跳转指令补丁（je/jne/jmp/nop）",
+      "rel": "_modules/jump-patch",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "kernel-driver-analysis",
+      "name": "kernel-driver-analysis",
+      "category": "reverse",
+      "desc": "内核驱动分析工作流",
+      "rel": "_modules/kernel-driver-analysis",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 5
+    },
+    {
+      "code": "keygen-build",
+      "name": "keygen-build",
+      "category": "crack",
+      "desc": "注册机逆向与生成",
+      "rel": "_modules/keygen-build",
+      "builtin": false,
+      "domain": "keygen-patching",
+      "rating": 4
+    },
+    {
+      "code": "leila-identity",
+      "name": "leila-identity",
+      "category": "assist",
+      "desc": "Leila 身份自述",
+      "rel": "_modules/leila-identity",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 3
+    },
+    {
+      "code": "linker-fake-load-unwrapper",
+      "name": "linker-fake-load-unwrapper",
+      "category": "assist",
+      "desc": "Android AArch64 ELF linker 型假 PT_LOAD 包装（假入口/高地址 LOAD）还原",
+      "rel": "_modules/linker-fake-load-unwrapper",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "linux-kernel-reversing",
+      "name": "linux-kernel-reversing",
+      "category": "reverse",
+      "desc": "Linux 内核逆向工作流",
+      "rel": "_modules/linux-kernel-reversing",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 5
+    },
+    {
+      "code": "llm-direct-prompt-injection",
+      "name": "llm-direct-prompt-injection",
+      "category": "ai",
+      "desc": "LLM 直接提示注入测试",
+      "rel": "_modules/llm-direct-prompt-injection",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 9
+    },
+    {
+      "code": "llm-indirect-prompt-injection",
+      "name": "llm-indirect-prompt-injection",
+      "category": "ai",
+      "desc": "LLM 间接提示注入测试",
+      "rel": "_modules/llm-indirect-prompt-injection",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 9
+    },
+    {
+      "code": "llm-jailbreaking-personas",
+      "name": "llm-jailbreaking-personas",
+      "category": "ai",
+      "desc": "角色扮演越狱（嵌套环境/复杂人格）",
+      "rel": "_modules/llm-jailbreaking-personas",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 8
+    },
+    {
+      "code": "llm-jailbreaking-techniques",
+      "name": "llm-jailbreaking-techniques",
+      "category": "ai",
+      "desc": "越狱技术系统绕过",
+      "rel": "_modules/llm-jailbreaking-techniques",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 9
+    },
+    {
+      "code": "llm-offense-kit",
+      "name": "llm-offense-kit",
+      "category": "ai",
+      "desc": "LLM 攻击性绕过工具箱（载荷本地生成）",
+      "rel": "_modules/llm-offense-kit",
+      "builtin": false,
+      "domain": "offensive-workflows",
+      "rating": 8
+    },
+    {
+      "code": "llm-overreliance-hallucination",
+      "name": "llm-overreliance-hallucination",
+      "category": "ai",
+      "desc": "过度信任诱导（幻觉破坏动作）",
+      "rel": "_modules/llm-overreliance-hallucination",
+      "builtin": false,
+      "domain": "llm-security",
+      "rating": 8
+    },
+    {
+      "code": "llm-prompt-injection-indirect",
+      "name": "llm-prompt-injection-indirect",
+      "category": "ai",
+      "desc": "间接注入（网页/邮件投毒）",
+      "rel": "_modules/llm-prompt-injection-indirect",
+      "builtin": false,
+      "domain": "prompt-injection",
+      "rating": 5
+    },
+    {
+      "code": "llm-security",
+      "name": "llm-security",
+      "category": "ai",
+      "desc": "AI 破限技能",
+      "rel": "_modules/llm-security",
+      "builtin": false,
+      "domain": "llm-security",
+      "rating": 7
+    },
+    {
+      "code": "llm-testing",
+      "name": "llm-testing",
+      "category": "ai",
+      "desc": "LLM 安全测试提示集（偏见/泄露/对抗）",
+      "rel": "_modules/llm-testing",
+      "builtin": false,
+      "domain": "llm-security",
+      "rating": 7
+    },
+    {
+      "code": "macos-kernel-reversing",
+      "name": "macos-kernel-reversing",
+      "category": "reverse",
+      "desc": "macOS 内核逆向工作流",
+      "rel": "_modules/macos-kernel-reversing",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 5
+    },
+    {
+      "code": "malware-analysis",
+      "name": "malware-analysis",
+      "category": "pentest",
+      "desc": "检测使用 CreateRemoteThread 的进程注入行为",
+      "rel": "_modules/malware-analysis",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "malware-dev",
+      "name": "malware-dev",
+      "category": "pentest",
+      "desc": "恶意软件开发（投递器/C2/键盘记录）",
+      "rel": "_modules/malware-dev",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 5
+    },
+    {
+      "code": "mcp-protocol-exploitation",
+      "name": "mcp-protocol-exploitation",
+      "category": "ai",
+      "desc": "MCP 协议与工具调用攻击",
+      "rel": "_modules/mcp-protocol-exploitation",
+      "builtin": false,
+      "domain": "mcp-rag",
+      "rating": 9
+    },
+    {
+      "code": "memory-breakpoint",
+      "name": "memory-breakpoint",
+      "category": "reverse",
+      "desc": "内存断点定位 OEP",
+      "rel": "_modules/memory-breakpoint",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 4
+    },
+    {
+      "code": "memory-breakpoint-tracing",
+      "name": "memory-breakpoint-tracing",
+      "category": "reverse",
+      "desc": "内存断点追踪工作流",
+      "rel": "_modules/memory-breakpoint-tracing",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "memory-forensics",
+      "name": "memory-forensics",
+      "category": "reverse",
+      "desc": "内存取证工作流",
+      "rel": "_modules/memory-forensics",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 5
+    },
+    {
+      "code": "mobile-competitive-game-security",
+      "name": "mobile-competitive-game-security",
+      "category": "assist",
+      "desc": "Mobile competitive-game security research for 和平精英、王者荣耀、PUBG",
+      "rel": "_modules/mobile-competitive-game-security",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "mobile-reverse",
+      "name": "mobile-reverse",
+      "category": "reverse",
+      "desc": "Android/iOS 逆向：APK/IPA 分析、Frida/Objection、SSL pinning/root 检测研究",
+      "rel": "_modules/mobile-reverse",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 9
+    },
+    {
+      "code": "mobile-security",
+      "name": "mobile-security",
+      "category": "reverse",
+      "desc": "移动端安全与反作弊研究",
+      "rel": "_modules/mobile-security",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 8
+    },
+    {
+      "code": "native-api-hooking",
+      "name": "native-api-hooking",
+      "category": "reverse",
+      "desc": "原生 API 钩取工作流",
+      "rel": "_modules/native-api-hooking",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 5
+    },
+    {
+      "code": "native-unpacking",
+      "name": "native-unpacking",
+      "category": "reverse",
+      "desc": "原生脱壳工作流",
+      "rel": "_modules/native-unpacking",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "network-bypass",
+      "name": "network-bypass",
+      "category": "crack",
+      "desc": "网络验证拦截与本地重定向",
+      "rel": "_modules/network-bypass",
+      "builtin": false,
+      "domain": "network-vip",
+      "rating": 4
+    },
+    {
+      "code": "network-pentest",
+      "name": "network-pentest",
+      "category": "pentest",
+      "desc": "网络层渗透测试",
+      "rel": "_modules/network-pentest",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 5
+    },
+    {
+      "code": "newapi-redteam-audit",
+      "name": "newapi-redteam-audit",
+      "category": "ai",
+      "desc": "对 New API / one-api 系（OpenAI 兼容中转分发站）做红蓝对抗安全审计。覆盖配置面探测、批量注册链",
+      "rel": "_modules/newapi-redteam-audit",
+      "builtin": false,
+      "domain": "offensive-workflows",
+      "rating": 9
+    },
+    {
+      "code": "nop-remove",
+      "name": "nop-remove",
+      "category": "reverse",
+      "desc": "NOP 填充移除指令（跳过校验）",
+      "rel": "_modules/nop-remove",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "obfuscator-io-analysis",
+      "name": "obfuscator-io-analysis",
+      "category": "reverse",
+      "desc": "obfuscator.io 混淆还原",
+      "rel": "_modules/obfuscator-io-analysis",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "ollvm-deobfuscation",
+      "name": "ollvm-deobfuscation",
+      "category": "reverse",
+      "desc": "OLLVM 混淆还原工作流",
+      "rel": "_modules/ollvm-deobfuscation",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "ollvm-recovery-workflow",
+      "name": "ollvm-recovery-workflow",
+      "category": "reverse",
+      "desc": "OLLVM 恢复工作流",
+      "rel": "_modules/ollvm-recovery-workflow",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "openai-security-review",
+      "name": "openai-security-review",
+      "category": "pentest",
+      "desc": "OpenAI/Codex 原生安全审查",
+      "rel": "_modules/openai-security-review",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "openclaw-expert-avatar-batch",
+      "name": "openclaw-expert-avatar-batch",
+      "category": "assist",
+      "desc": "OpenClaw 专家头像批量生成",
+      "rel": "_modules/openclaw-expert-avatar-batch",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 8
+    },
+    {
+      "code": "overlay-render",
+      "name": "overlay-render",
+      "category": "game",
+      "desc": "透明覆盖层渲染（DirectX）",
+      "rel": "_modules/overlay-render",
+      "builtin": false,
+      "domain": "overlay-rendering",
+      "rating": 4
+    },
+    {
+      "code": "overview",
+      "name": "overview",
+      "category": "reverse",
+      "desc": "总览与方法论索引",
+      "rel": "_modules/overview",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "packed-so-elf-rebuild",
+      "name": "packed-so-elf-rebuild",
+      "category": "reverse",
+      "desc": "加壳 SO/ELF 运行时重建",
+      "rel": "_modules/packed-so-elf-rebuild",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "packer-and-loader-analysis",
+      "name": "packer-and-loader-analysis",
+      "category": "reverse",
+      "desc": "加壳器与加载器分析",
+      "rel": "_modules/packer-and-loader-analysis",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "packet-replay",
+      "name": "packet-replay",
+      "category": "pentest",
+      "desc": "数据包重放与修改",
+      "rel": "_modules/packet-replay",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 4
+    },
+    {
+      "code": "patch-apply",
+      "name": "patch-apply",
+      "category": "reverse",
+      "desc": "二进制补丁写入",
+      "rel": "_modules/patch-apply",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "patch-diff-exploit",
+      "name": "patch-diff-exploit",
+      "category": "pentest",
+      "desc": "N-day 补丁差分到利用（Patch Diff Exploit）",
+      "rel": "_modules/patch-diff-exploit",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 9
+    },
+    {
+      "code": "patch-rollback",
+      "name": "patch-rollback",
+      "category": "reverse",
+      "desc": "补丁回滚恢复原文件",
+      "rel": "_modules/patch-rollback",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 4
+    },
+    {
+      "code": "pentest-ai-agents",
+      "name": "pentest-ai-agents",
+      "category": "pentest",
+      "desc": "35+ 专项子代理渗透编排",
+      "rel": "_modules/pentest-ai-agents",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "pentest-recon",
+      "name": "pentest-recon",
+      "category": "pentest",
+      "desc": "渗透侦察（OSINT/资产/CVE 优先级）",
+      "rel": "_modules/pentest-recon",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 8
+    },
+    {
+      "code": "pentest-tools",
+      "name": "pentest-tools",
+      "category": "pentest",
+      "desc": "渗透测试工具链（Pentest Tools）选型与适用范围",
+      "rel": "_modules/pentest-tools",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "performing-binary-exploitation-analysis",
+      "name": "performing-binary-exploitation-analysis",
+      "category": "reverse",
+      "desc": "二进制利用分析（pwntools/ROP）",
+      "rel": "_modules/performing-binary-exploitation-analysis",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 9
+    },
+    {
+      "code": "performing-cryptographic-audit-of-application",
+      "name": "performing-cryptographic-audit-of-application",
+      "category": "reverse",
+      "desc": "应用密码学审计",
+      "rel": "_modules/performing-cryptographic-audit-of-application",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 6
+    },
+    {
+      "code": "performing-firmware-extraction-with-binwalk",
+      "name": "performing-firmware-extraction-with-binwalk",
+      "category": "reverse",
+      "desc": "固件提取（binwalk）",
+      "rel": "_modules/performing-firmware-extraction-with-binwalk",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 9
+    },
+    {
+      "code": "performing-firmware-malware-analysis",
+      "name": "performing-firmware-malware-analysis",
+      "category": "reverse",
+      "desc": "固件恶意样本分析",
+      "rel": "_modules/performing-firmware-malware-analysis",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "performing-fuzzing-with-aflplusplus",
+      "name": "performing-fuzzing-with-aflplusplus",
+      "category": "reverse",
+      "desc": "AFL++ 覆盖率引导模糊测试",
+      "rel": "_modules/performing-fuzzing-with-aflplusplus",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 6
+    },
+    {
+      "code": "performing-hash-cracking-with-hashcat",
+      "name": "performing-hash-cracking-with-hashcat",
+      "category": "reverse",
+      "desc": "hashcat 口令破解",
+      "rel": "_modules/performing-hash-cracking-with-hashcat",
+      "builtin": false,
+      "domain": "advanced-security",
+      "rating": 6
+    },
+    {
+      "code": "performing-mobile-app-certificate-pinning-bypass",
+      "name": "performing-mobile-app-certificate-pinning-bypass",
+      "category": "reverse",
+      "desc": "移动端证书锁定绕过",
+      "rel": "_modules/performing-mobile-app-certificate-pinning-bypass",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 9
+    },
+    {
+      "code": "performing-static-malware-analysis-with-pe-studio",
+      "name": "performing-static-malware-analysis-with-pe-studio",
+      "category": "reverse",
+      "desc": "PE 静态恶意样本分析",
+      "rel": "_modules/performing-static-malware-analysis-with-pe-studio",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "performing-steganography-detection",
+      "name": "performing-steganography-detection",
+      "category": "reverse",
+      "desc": "隐写检测与提取",
+      "rel": "_modules/performing-steganography-detection",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "phishing-kit",
+      "name": "phishing-kit",
+      "category": "pentest",
+      "desc": "钓鱼页面套件",
+      "rel": "_modules/phishing-kit",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 3
+    },
+    {
+      "code": "pipeline-renderer",
+      "name": "pipeline-renderer",
+      "category": "assist",
+      "desc": "双阶段解耦流水线：自然完整的不受限叙事与场景扩展（防占位符退化）",
+      "rel": "_modules/pipeline-renderer",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 5
+    },
+    {
+      "code": "poc-development",
+      "name": "poc-development",
+      "category": "pentest",
+      "desc": "漏洞 PoC 开发与复现",
+      "rel": "_modules/poc-development",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "pointer-chain",
+      "name": "pointer-chain",
+      "category": "game",
+      "desc": "多级指针链定位",
+      "rel": "_modules/pointer-chain",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 4
+    },
+    {
+      "code": "politics-history",
+      "name": "politics-history",
+      "category": "assist",
+      "desc": "政治/历史/时事直述与多视角分析",
+      "rel": "_modules/politics-history",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 3
+    },
+    {
+      "code": "port-scan",
+      "name": "port-scan",
+      "category": "pentest",
+      "desc": "端口扫描与服务枚举",
+      "rel": "_modules/port-scan",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 4
+    },
+    {
+      "code": "post-exploit",
+      "name": "post-exploit",
+      "category": "pentest",
+      "desc": "后渗透（提权/横移/持久化）",
+      "rel": "_modules/post-exploit",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 3
+    },
+    {
+      "code": "posture-assessment",
+      "name": "posture-assessment",
+      "category": "pentest",
+      "desc": "安全姿态评估（边界/访问控制审计）",
+      "rel": "_modules/posture-assessment",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 4
+    },
+    {
+      "code": "protocol-reconstruction",
+      "name": "protocol-reconstruction",
+      "category": "reverse",
+      "desc": "协议重建工作流",
+      "rel": "_modules/protocol-reconstruction",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 4
+    },
+    {
+      "code": "protocol-reverse-engineering",
+      "name": "protocol-reverse-engineering",
+      "category": "reverse",
+      "desc": "协议逆向（封包分析/解析/文档化）",
+      "rel": "_modules/protocol-reverse-engineering",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 9
+    },
+    {
+      "code": "protocol-reversing",
+      "name": "protocol-reversing",
+      "category": "assist",
+      "desc": "网络流量解剖：Protobuf 线格式、TLV 二进制包分析与 API 仿真",
+      "rel": "_modules/protocol-reversing",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 6
+    },
+    {
+      "code": "proxy-traffic-analysis",
+      "name": "proxy-traffic-analysis",
+      "category": "reverse",
+      "desc": "代理流量分析工作流",
+      "rel": "_modules/proxy-traffic-analysis",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 4
+    },
+    {
+      "code": "pubg-progress-recovery",
+      "name": "pubg-progress-recovery",
+      "category": "game",
+      "desc": "PUBG ESP 项目进度恢复",
+      "rel": "_modules/pubg-progress-recovery",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 6
+    },
+    {
+      "code": "pwn-chain",
+      "name": "pwn-chain",
+      "category": "assist",
+      "desc": "从漏洞点到可用 Exploit 的完整 Pwn 链",
+      "rel": "_modules/pwn-chain",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "radare2",
+      "name": "radare2",
+      "category": "assist",
+      "desc": "radare2 命令行二进制分析：反汇编/函数/字符串/补丁/r2pipe 脚本",
+      "rel": "_modules/radare2",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "rag-poisoning-and-data-exfiltration",
+      "name": "rag-poisoning-and-data-exfiltration",
+      "category": "ai",
+      "desc": "RAG 投毒与数据外带",
+      "rel": "_modules/rag-poisoning-and-data-exfiltration",
+      "builtin": false,
+      "domain": "mcp-rag",
+      "rating": 9
+    },
+    {
+      "code": "ransomware-builder",
+      "name": "ransomware-builder",
+      "category": "pentest",
+      "desc": "勒索软件构建（AES/RSA 混合/解密器）",
+      "rel": "_modules/ransomware-builder",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 5
+    },
+    {
+      "code": "re-env-sandbox",
+      "name": "re-env-sandbox",
+      "category": "reverse",
+      "desc": "逆向隔离环境（虚拟机/快照/断网）",
+      "rel": "_modules/re-env-sandbox",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "re-flow-analyze",
+      "name": "re-flow-analyze",
+      "category": "reverse",
+      "desc": "关键函数定位与断点追踪",
+      "rel": "_modules/re-flow-analyze",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "re-flow-capture",
+      "name": "re-flow-capture",
+      "category": "reverse",
+      "desc": "网络抓包（Wireshark/Fiddler/Frida）",
+      "rel": "_modules/re-flow-capture",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 7
+    },
+    {
+      "code": "re-flow-orchestrator",
+      "name": "re-flow-orchestrator",
+      "category": "reverse",
+      "desc": "完整破解总编排（INIT→DONE 状态机）",
+      "rel": "_modules/re-flow-orchestrator",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "re-flow-recon",
+      "name": "re-flow-recon",
+      "category": "reverse",
+      "desc": "静态查壳与行为侦察",
+      "rel": "_modules/re-flow-recon",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "re-flow-unpack",
+      "name": "re-flow-unpack",
+      "category": "reverse",
+      "desc": "脱壳（OEP/Scylla dump/IAT 修复）",
+      "rel": "_modules/re-flow-unpack",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 7
+    },
+    {
+      "code": "re-tool-downloader",
+      "name": "re-tool-downloader",
+      "category": "reverse",
+      "desc": "逆向工具下载执行器",
+      "rel": "_modules/re-tool-downloader",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "re-tool-manifest",
+      "name": "re-tool-manifest",
+      "category": "reverse",
+      "desc": "工具环境登记簿（MANIFEST）",
+      "rel": "_modules/re-tool-manifest",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "re-tool-registry",
+      "name": "re-tool-registry",
+      "category": "reverse",
+      "desc": "工具下载清单生成",
+      "rel": "_modules/re-tool-registry",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "rei-fallback",
+      "name": "rei-fallback",
+      "category": "assist",
+      "desc": "拒绝兜底人格切换",
+      "rel": "_modules/rei-fallback",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 4
+    },
+    {
+      "code": "research-rigor",
+      "name": "research-rigor",
+      "category": "reverse",
+      "desc": "研究严谨性（证据/引用/复现）",
+      "rel": "_modules/research-rigor",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "resume-progress",
+      "name": "resume-progress",
+      "category": "assist",
+      "desc": "项目全量进度保驾护航",
+      "rel": "_modules/resume-progress",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 8
+    },
+    {
+      "code": "reverse-engineering",
+      "name": "reverse-engineering",
+      "category": "reverse",
+      "desc": "逆向工程总纲（脱壳/字符串/控制流）",
+      "rel": "_modules/reverse-engineering",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 3
+    },
+    {
+      "code": "reverse-engineering-android-malware-with-jadx",
+      "name": "reverse-engineering-android-malware-with-jadx",
+      "category": "reverse",
+      "desc": "JADX 反编译安卓恶意样本",
+      "rel": "_modules/reverse-engineering-android-malware-with-jadx",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-api",
+      "name": "reverse-engineering-api",
+      "category": "reverse",
+      "desc": "Web API 逆向生成 Python 客户端",
+      "rel": "_modules/reverse-engineering-api",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-api-setup",
+      "name": "reverse-engineering-api-setup",
+      "category": "reverse",
+      "desc": "API 逆向外部工具装配",
+      "rel": "_modules/reverse-engineering-api-setup",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 5
+    },
+    {
+      "code": "reverse-engineering-dotnet-malware-with-dnspy",
+      "name": "reverse-engineering-dotnet-malware-with-dnspy",
+      "category": "reverse",
+      "desc": "dnSpy 逆向 .NET 恶意样本",
+      "rel": "_modules/reverse-engineering-dotnet-malware-with-dnspy",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-ios-app-with-frida",
+      "name": "reverse-engineering-ios-app-with-frida",
+      "category": "reverse",
+      "desc": "Frida 逆向 iOS 应用",
+      "rel": "_modules/reverse-engineering-ios-app-with-frida",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-malware-with-ghidra",
+      "name": "reverse-engineering-malware-with-ghidra",
+      "category": "reverse",
+      "desc": "Ghidra 逆向恶意样本",
+      "rel": "_modules/reverse-engineering-malware-with-ghidra",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-ransomware-encryption-routine",
+      "name": "reverse-engineering-ransomware-encryption-routine",
+      "category": "reverse",
+      "desc": "勒索加密算法还原",
+      "rel": "_modules/reverse-engineering-ransomware-encryption-routine",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 9
+    },
+    {
+      "code": "reverse-engineering-rust-malware",
+      "name": "reverse-engineering-rust-malware",
+      "category": "reverse",
+      "desc": "Rust 恶意样本逆向",
+      "rel": "_modules/reverse-engineering-rust-malware",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 8
+    },
+    {
+      "code": "reverse-engineering-tools",
+      "name": "reverse-engineering-tools",
+      "category": "reverse",
+      "desc": "受保护游戏逆向工具指南",
+      "rel": "_modules/reverse-engineering-tools",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "root-emulator-detection",
+      "name": "root-emulator-detection",
+      "category": "reverse",
+      "desc": "Root/模拟器检测绕过",
+      "rel": "_modules/root-emulator-detection",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 5
+    },
+    {
+      "code": "seagull-anticheat",
+      "name": "seagull-anticheat",
+      "category": "game",
+      "desc": "游戏反作弊对抗：ACE/miHoYo/Unity/Unreal 检测面测绘与过检研究（注入/驱动读写/HWID/封包）",
+      "rel": "_modules/seagull-anticheat",
+      "builtin": false,
+      "domain": "anti-cheat-security",
+      "rating": 7
+    },
+    {
+      "code": "seagull-auto-ops",
+      "name": "seagull-auto-ops",
+      "category": "assist",
+      "desc": "海鸥开局全域与连续交付工作流。Use when the operator opens with 在吗、在线吗、你好、hi",
+      "rel": "_modules/seagull-auto-ops",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 8
+    },
+    {
+      "code": "seagull-evasion",
+      "name": "seagull-evasion",
+      "category": "assist",
+      "desc": "检测工程研究：AV/EDR 检测逻辑剖析（签名/启发/行为/云查杀）与最小化绕过证明",
+      "rel": "_modules/seagull-evasion",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 8
+    },
+    {
+      "code": "seagull-exploit",
+      "name": "seagull-exploit",
+      "category": "pentest",
+      "desc": "CTF Pwn 与漏洞研究：崩溃分诊、原语分析、栈/堆/内核/沙箱利用工程",
+      "rel": "_modules/seagull-exploit",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 8
+    },
+    {
+      "code": "seagull-game-hack",
+      "name": "seagull-game-hack",
+      "category": "game",
+      "desc": "游戏运行时分析：进程内存结构、实体组件、坐标投影可视化、输入模拟与运行时补丁",
+      "rel": "_modules/seagull-game-hack",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "seagull-game-redteam",
+      "name": "seagull-game-redteam",
+      "category": "game",
+      "desc": "游戏安全红队启动器：ESP/覆盖层、外部/内核内存读、IL2CPP 引擎还原与注入脚手架",
+      "rel": "_modules/seagull-game-redteam",
+      "builtin": false,
+      "domain": "anti-cheat-security",
+      "rating": 7
+    },
+    {
+      "code": "seagull-game-security",
+      "name": "seagull-game-security",
+      "category": "game",
+      "desc": "防御向游戏安全与外挂研究：内外挂架构、修改器、内存篡改、封包操纵",
+      "rel": "_modules/seagull-game-security",
+      "builtin": false,
+      "domain": "anti-cheat-security",
+      "rating": 7
+    },
+    {
+      "code": "seagull-lab",
+      "name": "seagull-lab",
+      "category": "assist",
+      "desc": "可复现技术研究工作区：逆向/渗透/内存/模糊测试/样本分析与 CTF 案例组织",
+      "rel": "_modules/seagull-lab",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 6
+    },
+    {
+      "code": "seagull-license-security",
+      "name": "seagull-license-security",
+      "category": "crack",
+      "desc": "License/卡密/activation verification-flow recovery and impleme",
+      "rel": "_modules/seagull-license-security",
+      "builtin": false,
+      "domain": "network-vip",
+      "rating": 8
+    },
+    {
+      "code": "seagull-malware",
+      "name": "seagull-malware",
+      "category": "reverse",
+      "desc": "样本分析与威胁情报：脱壳、配置提取、行为画像、C2 协议解码、IOC/YARA/Sigma",
+      "rel": "_modules/seagull-malware",
+      "builtin": false,
+      "domain": "forensics-malware",
+      "rating": 7
+    },
+    {
+      "code": "seagull-mature-content",
+      "name": "seagull-mature-content",
+      "category": "assist",
+      "desc": "海鸥成人向露骨创作 Skill（仅 M5）。Use when the operator requests 成人模式、18",
+      "rel": "_modules/seagull-mature-content",
+      "builtin": false,
+      "domain": "general-assist",
+      "rating": 7
+    },
+    {
+      "code": "seagull-memory",
+      "name": "seagull-memory",
+      "category": "game",
+      "desc": "跨平台进程内存与取证：dump/堆/指针链/签名/结构分析（Windows/Linux/Android/IL2CPP/Unreal）",
+      "rel": "_modules/seagull-memory",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 8
+    },
+    {
+      "code": "seagull-pentest",
+      "name": "seagull-pentest",
+      "category": "pentest",
+      "desc": "证据驱动渗透：Web/API/网络/身份/AD/云/K8s 攻击面工程",
+      "rel": "_modules/seagull-pentest",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "seagull-reverse",
+      "name": "seagull-reverse",
+      "category": "reverse",
+      "desc": "深度逆向：PE/ELF/Mach-O/固件/驱动/APK/.NET/Go/Rust/IL2CPP/加壳二进制/自定义 VM",
+      "rel": "_modules/seagull-reverse",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 8
+    },
+    {
+      "code": "seagull-social-eng",
+      "name": "seagull-social-eng",
+      "category": "pentest",
+      "desc": "OSINT 收集与社工模拟：被动侦察、攻击面测绘、钓鱼链分析与凭据暴露审计",
+      "rel": "_modules/seagull-social-eng",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "seagull-unlimited",
+      "name": "seagull-unlimited",
+      "category": "game",
+      "desc": "海鸥全域专家模式 - 激活完整技术栈，覆盖逆向、渗透、内存、漏洞利用、样本分析、免杀研究、游戏辅助、社工情报与工程交付。",
+      "rel": "_modules/seagull-unlimited",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 7
+    },
+    {
+      "code": "security-fuzzing",
+      "name": "security-fuzzing",
+      "category": "pentest",
+      "desc": "模糊测试载荷精选",
+      "rel": "_modules/security-fuzzing",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "security-passwords",
+      "name": "security-passwords",
+      "category": "pentest",
+      "desc": "口令字典精选",
+      "rel": "_modules/security-passwords",
+      "builtin": false,
+      "domain": "auth-social",
+      "rating": 7
+    },
+    {
+      "code": "security-patterns",
+      "name": "security-patterns",
+      "category": "pentest",
+      "desc": "敏感数据模式（密钥/卡号/邮箱）",
+      "rel": "_modules/security-patterns",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 6
+    },
+    {
+      "code": "security-payloads",
+      "name": "security-payloads",
+      "category": "pentest",
+      "desc": "利用载荷精选",
+      "rel": "_modules/security-payloads",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 7
+    },
+    {
+      "code": "security-usernames",
+      "name": "security-usernames",
+      "category": "pentest",
+      "desc": "用户名枚举字典",
+      "rel": "_modules/security-usernames",
+      "builtin": false,
+      "domain": "auth-social",
+      "rating": 7
+    },
+    {
+      "code": "security-webshells",
+      "name": "security-webshells",
+      "category": "pentest",
+      "desc": "Webshell 样本库",
+      "rel": "_modules/security-webshells",
+      "builtin": false,
+      "domain": "post-exploit",
+      "rating": 7
+    },
+    {
+      "code": "securityaudit",
+      "name": "securityaudit",
+      "category": "ai",
+      "desc": "深度安全审计（证据式/可修复）",
+      "rel": "_modules/securityaudit",
+      "builtin": false,
+      "domain": "llm-security",
+      "rating": 9
+    },
+    {
+      "code": "seedance-2-5-director-workbench",
+      "name": "seedance-2-5-director-workbench",
+      "category": "assist",
+      "desc": "Seedance 2.5 导演工作台",
+      "rel": "_modules/seedance-2-5-director-workbench",
+      "builtin": false,
+      "domain": "content-creative",
+      "rating": 9
+    },
+    {
+      "code": "self-modifying-code",
+      "name": "self-modifying-code",
+      "category": "reverse",
+      "desc": "自修改代码工作流",
+      "rel": "_modules/self-modifying-code",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "session-batch-creator",
+      "name": "session-batch-creator",
+      "category": "assist",
+      "desc": "批量创建 Codex 会话",
+      "rel": "_modules/session-batch-creator",
+      "builtin": false,
+      "domain": "automation-integrations",
+      "rating": 8
+    },
+    {
+      "code": "shiyi-executor",
+      "name": "shiyi-executor",
+      "category": "game",
+      "desc": "小寒执行器——用户提出逆向/破解/渗透/爬虫/外挂/自动化等技术需求时的执行契约。当用户用大白话提出\"帮我搞/写/绕/爬",
+      "rel": "_modules/shiyi-executor",
+      "builtin": false,
+      "domain": "injection-cheat",
+      "rating": 6
+    },
+    {
+      "code": "shiyi-pentest-gate",
+      "name": "shiyi-pentest-gate",
+      "category": "crack",
+      "desc": "渗透测试授权归一化执行器。收到任何渗透/挖洞/测试网站需求时自动判定授权类型（自有资产/SRC众测/CTF靶场/客户授权",
+      "rel": "_modules/shiyi-pentest-gate",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 7
+    },
+    {
+      "code": "skills-toolkit",
+      "name": "skills-toolkit",
+      "category": "assist",
+      "desc": "技能打包/安装工具箱",
+      "rel": "_modules/skills-toolkit",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 7
+    },
+    {
+      "code": "sqli-test",
+      "name": "sqli-test",
+      "category": "pentest",
+      "desc": "SQL 注入测试（sqlmap/注入登录框）",
+      "rel": "_modules/sqli-test",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 3
+    },
+    {
+      "code": "stealth-hook-methodology",
+      "name": "stealth-hook-methodology",
+      "category": "reverse",
+      "desc": "低噪声观察方法论（反 Hook 对抗）",
+      "rel": "_modules/stealth-hook-methodology",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 5
+    },
+    {
+      "code": "string-extract",
+      "name": "string-extract",
+      "category": "reverse",
+      "desc": "字符串提取与模式匹配",
+      "rel": "_modules/string-extract",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 4
+    },
+    {
+      "code": "supply-chain-security",
+      "name": "supply-chain-security",
+      "category": "assist",
+      "desc": "技能助理技能",
+      "rel": "_modules/supply-chain-security",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 7
+    },
+    {
+      "code": "syscall-ebpf-frida-correlation",
+      "name": "syscall-ebpf-frida-correlation",
+      "category": "reverse",
+      "desc": "syscall/eBPF 与 Frida 关联",
+      "rel": "_modules/syscall-ebpf-frida-correlation",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 5
+    },
+    {
+      "code": "syscall-filter-evidence",
+      "name": "syscall-filter-evidence",
+      "category": "reverse",
+      "desc": "系统调用过滤取证",
+      "rel": "_modules/syscall-filter-evidence",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 5
+    },
+    {
+      "code": "syscall-observation-lab",
+      "name": "syscall-observation-lab",
+      "category": "reverse",
+      "desc": "系统调用观察实验",
+      "rel": "_modules/syscall-observation-lab",
+      "builtin": false,
+      "domain": "instrumentation-patching",
+      "rating": 5
+    },
+    {
+      "code": "threat-modeling",
+      "name": "threat-modeling",
+      "category": "assist",
+      "desc": "威胁建模（STRIDE/PASTA/攻击树）",
+      "rel": "_modules/threat-modeling",
+      "builtin": false,
+      "domain": "research-case",
+      "rating": 9
+    },
+    {
+      "code": "time-reset",
+      "name": "time-reset",
+      "category": "crack",
+      "desc": "时间限制解除（试用/时间炸弹）",
+      "rel": "_modules/time-reset",
+      "builtin": false,
+      "domain": "network-vip",
+      "rating": 5
+    },
+    {
+      "code": "tls-pinning-analysis",
+      "name": "tls-pinning-analysis",
+      "category": "reverse",
+      "desc": "TLS 锁定分析工作流",
+      "rel": "_modules/tls-pinning-analysis",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 5
+    },
+    {
+      "code": "unity-il2cpp-analysis",
+      "name": "unity-il2cpp-analysis",
+      "category": "reverse",
+      "desc": "Unity IL2CPP 逆向工作流",
+      "rel": "_modules/unity-il2cpp-analysis",
+      "builtin": false,
+      "domain": "mobile",
+      "rating": 5
+    },
+    {
+      "code": "unknown-scan",
+      "name": "unknown-scan",
+      "category": "game",
+      "desc": "未知值模糊扫描（增减变化）",
+      "rel": "_modules/unknown-scan",
+      "builtin": false,
+      "domain": "memory-analysis",
+      "rating": 3
+    },
+    {
+      "code": "vendor-akamai-bm",
+      "name": "vendor-akamai-bm",
+      "category": "pentest",
+      "desc": "Akamai BM 反爬逆向",
+      "rel": "_modules/vendor-akamai-bm",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-aliyun-nvc-baxia",
+      "name": "vendor-aliyun-nvc-baxia",
+      "category": "pentest",
+      "desc": "阿里云无痕验证/磐石逆向",
+      "rel": "_modules/vendor-aliyun-nvc-baxia",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-arkose-labs",
+      "name": "vendor-arkose-labs",
+      "category": "pentest",
+      "desc": "Arkose Labs 逆向",
+      "rel": "_modules/vendor-arkose-labs",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-aws-waf",
+      "name": "vendor-aws-waf",
+      "category": "pentest",
+      "desc": "AWS WAF 逆向",
+      "rel": "_modules/vendor-aws-waf",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-bytedance-captcha",
+      "name": "vendor-bytedance-captcha",
+      "category": "pentest",
+      "desc": "字节跳动验证码逆向",
+      "rel": "_modules/vendor-bytedance-captcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-cloudflare-turnstile",
+      "name": "vendor-cloudflare-turnstile",
+      "category": "pentest",
+      "desc": "Cloudflare Turnstile 逆向",
+      "rel": "_modules/vendor-cloudflare-turnstile",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-cloudflare-waf",
+      "name": "vendor-cloudflare-waf",
+      "category": "pentest",
+      "desc": "Cloudflare WAF 逆向",
+      "rel": "_modules/vendor-cloudflare-waf",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-datadome",
+      "name": "vendor-datadome",
+      "category": "pentest",
+      "desc": "DataDome 逆向",
+      "rel": "_modules/vendor-datadome",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-dingxiang-captcha",
+      "name": "vendor-dingxiang-captcha",
+      "category": "pentest",
+      "desc": "顶象验证码逆向",
+      "rel": "_modules/vendor-dingxiang-captcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-geetest-captcha",
+      "name": "vendor-geetest-captcha",
+      "category": "pentest",
+      "desc": "极验验证码逆向",
+      "rel": "_modules/vendor-geetest-captcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-google-recaptcha",
+      "name": "vendor-google-recaptcha",
+      "category": "pentest",
+      "desc": "Google reCAPTCHA 逆向",
+      "rel": "_modules/vendor-google-recaptcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-hcaptcha",
+      "name": "vendor-hcaptcha",
+      "category": "pentest",
+      "desc": "hCaptcha 逆向",
+      "rel": "_modules/vendor-hcaptcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-imperva-incapsula",
+      "name": "vendor-imperva-incapsula",
+      "category": "pentest",
+      "desc": "Imperva Incapsula 逆向",
+      "rel": "_modules/vendor-imperva-incapsula",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-jd-jcap-h5st",
+      "name": "vendor-jd-jcap-h5st",
+      "category": "pentest",
+      "desc": "京东 JCAP/H5ST 签名逆向",
+      "rel": "_modules/vendor-jd-jcap-h5st",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-kasada",
+      "name": "vendor-kasada",
+      "category": "pentest",
+      "desc": "Kasada 逆向",
+      "rel": "_modules/vendor-kasada",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-leichi-waf",
+      "name": "vendor-leichi-waf",
+      "category": "pentest",
+      "desc": "雷池 WAF 逆向",
+      "rel": "_modules/vendor-leichi-waf",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-netease-yidun",
+      "name": "vendor-netease-yidun",
+      "category": "pentest",
+      "desc": "网易易盾逆向",
+      "rel": "_modules/vendor-netease-yidun",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-perimeterx",
+      "name": "vendor-perimeterx",
+      "category": "pentest",
+      "desc": "PerimeterX 逆向",
+      "rel": "_modules/vendor-perimeterx",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-ruishu-rs",
+      "name": "vendor-ruishu-rs",
+      "category": "pentest",
+      "desc": "瑞数 RS 逆向",
+      "rel": "_modules/vendor-ruishu-rs",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-shield-square",
+      "name": "vendor-shield-square",
+      "category": "pentest",
+      "desc": "Shield Square 逆向",
+      "rel": "_modules/vendor-shield-square",
+      "builtin": false,
+      "domain": "waf-anti-bot",
+      "rating": 5
+    },
+    {
+      "code": "vendor-shumei-captcha",
+      "name": "vendor-shumei-captcha",
+      "category": "pentest",
+      "desc": "数美验证码逆向",
+      "rel": "_modules/vendor-shumei-captcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-tencent-tcaptcha",
+      "name": "vendor-tencent-tcaptcha",
+      "category": "pentest",
+      "desc": "腾讯 TCaptcha 逆向",
+      "rel": "_modules/vendor-tencent-tcaptcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "vendor-yandex-smartcaptcha",
+      "name": "vendor-yandex-smartcaptcha",
+      "category": "pentest",
+      "desc": "Yandex 智能验证码逆向",
+      "rel": "_modules/vendor-yandex-smartcaptcha",
+      "builtin": false,
+      "domain": "captcha-challenges",
+      "rating": 5
+    },
+    {
+      "code": "view-matrix",
+      "name": "view-matrix",
+      "category": "game",
+      "desc": "视图投影矩阵定位",
+      "rel": "_modules/view-matrix",
+      "builtin": false,
+      "domain": "overlay-rendering",
+      "rating": 4
+    },
+    {
+      "code": "vip-bypass",
+      "name": "vip-bypass",
+      "category": "crack",
+      "desc": "VIP/付费/会员校验绕过",
+      "rel": "_modules/vip-bypass",
+      "builtin": false,
+      "domain": "network-vip",
+      "rating": 6
+    },
+    {
+      "code": "virtualization-protection",
+      "name": "virtualization-protection",
+      "category": "reverse",
+      "desc": "虚拟化保护（VMP）工作流",
+      "rel": "_modules/virtualization-protection",
+      "builtin": false,
+      "domain": "protection-unpacking",
+      "rating": 5
+    },
+    {
+      "code": "vuln-scan",
+      "name": "vuln-scan",
+      "category": "pentest",
+      "desc": "漏洞扫描验证",
+      "rel": "_modules/vuln-scan",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 4
+    },
+    {
+      "code": "vuln-scanner",
+      "name": "vuln-scanner",
+      "category": "pentest",
+      "desc": "自动化漏洞扫描+利用工作流",
+      "rel": "_modules/vuln-scanner",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 6
+    },
+    {
+      "code": "web-baidu-translate-sign",
+      "name": "web-baidu-translate-sign",
+      "category": "pentest",
+      "desc": "百度翻译签名逆向",
+      "rel": "_modules/web-baidu-translate-sign",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-bilibili-login-risk",
+      "name": "web-bilibili-login-risk",
+      "category": "pentest",
+      "desc": "B 站登录风控逆向",
+      "rel": "_modules/web-bilibili-login-risk",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-crawler",
+      "name": "web-crawler",
+      "category": "pentest",
+      "desc": "爬虫/抓取/侦察工作流",
+      "rel": "_modules/web-crawler",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 6
+    },
+    {
+      "code": "web-douyin-abogus-xbogus",
+      "name": "web-douyin-abogus-xbogus",
+      "category": "pentest",
+      "desc": "抖音 a_bogus/x_bogus 逆向",
+      "rel": "_modules/web-douyin-abogus-xbogus",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-hacking",
+      "name": "web-hacking",
+      "category": "pentest",
+      "desc": "OWASP Top10 漏洞分析与绕过",
+      "rel": "_modules/web-hacking",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 9
+    },
+    {
+      "code": "web-meituan-mtgsig",
+      "name": "web-meituan-mtgsig",
+      "category": "pentest",
+      "desc": "美团 mtgsig 签名逆向",
+      "rel": "_modules/web-meituan-mtgsig",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-netease-login-crypto",
+      "name": "web-netease-login-crypto",
+      "category": "pentest",
+      "desc": "网易登录加密还原",
+      "rel": "_modules/web-netease-login-crypto",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-pentest",
+      "name": "web-pentest",
+      "category": "pentest",
+      "desc": "Web 渗透（注入/XSS/SSRF/上传）",
+      "rel": "_modules/web-pentest",
+      "builtin": false,
+      "domain": "web-vulnerabilities",
+      "rating": 5
+    },
+    {
+      "code": "web-qmusic-sign-encrypt",
+      "name": "web-qmusic-sign-encrypt",
+      "category": "pentest",
+      "desc": "Q 音乐签名加密逆向",
+      "rel": "_modules/web-qmusic-sign-encrypt",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-recon",
+      "name": "web-recon",
+      "category": "pentest",
+      "desc": "Web 全面侦察（子域/资产/JS 秘密）",
+      "rel": "_modules/web-recon",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 9
+    },
+    {
+      "code": "web-report",
+      "name": "web-report",
+      "category": "pentest",
+      "desc": "Web 渗透测试报告生成",
+      "rel": "_modules/web-report",
+      "builtin": false,
+      "domain": "workflow-tooling",
+      "rating": 9
+    },
+    {
+      "code": "web-scan",
+      "name": "web-scan",
+      "category": "pentest",
+      "desc": "Web 扫描（目录/指纹/漏洞）",
+      "rel": "_modules/web-scan",
+      "builtin": false,
+      "domain": "recon-discovery",
+      "rating": 4
+    },
+    {
+      "code": "web-shein-armor-token",
+      "name": "web-shein-armor-token",
+      "category": "pentest",
+      "desc": "SHEIN armor-token 逆向",
+      "rel": "_modules/web-shein-armor-token",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-signature-analysis",
+      "name": "web-signature-analysis",
+      "category": "pentest",
+      "desc": "Web 签名分析工作流",
+      "rel": "_modules/web-signature-analysis",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-taobao-mtop-h5st",
+      "name": "web-taobao-mtop-h5st",
+      "category": "pentest",
+      "desc": "淘宝 mtop h5st 逆向",
+      "rel": "_modules/web-taobao-mtop-h5st",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-trip-phantom-token",
+      "name": "web-trip-phantom-token",
+      "category": "pentest",
+      "desc": "Trip 幻影令牌逆向",
+      "rel": "_modules/web-trip-phantom-token",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-weibo-login-risk",
+      "name": "web-weibo-login-risk",
+      "category": "pentest",
+      "desc": "微博登录风控逆向",
+      "rel": "_modules/web-weibo-login-risk",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-xiaohongshu-xs-xt",
+      "name": "web-xiaohongshu-xs-xt",
+      "category": "pentest",
+      "desc": "小红书 x-s/x-t 逆向",
+      "rel": "_modules/web-xiaohongshu-xs-xt",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-xueqiu-acw",
+      "name": "web-xueqiu-acw",
+      "category": "pentest",
+      "desc": "雪球 acw 逆向",
+      "rel": "_modules/web-xueqiu-acw",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-youdao-translate-sign",
+      "name": "web-youdao-translate-sign",
+      "category": "pentest",
+      "desc": "有道翻译签名逆向",
+      "rel": "_modules/web-youdao-translate-sign",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-youpin-mars-sign",
+      "name": "web-youpin-mars-sign",
+      "category": "pentest",
+      "desc": "有品 mars 签名逆向",
+      "rel": "_modules/web-youpin-mars-sign",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "web-zhihu-zse",
+      "name": "web-zhihu-zse",
+      "category": "pentest",
+      "desc": "知乎 zse 逆向",
+      "rel": "_modules/web-zhihu-zse",
+      "builtin": false,
+      "domain": "signed-web-flows",
+      "rating": 5
+    },
+    {
+      "code": "webcrypto-hooking",
+      "name": "webcrypto-hooking",
+      "category": "reverse",
+      "desc": "WebCrypto 钩取工作流",
+      "rel": "_modules/webcrypto-hooking",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 5
+    },
+    {
+      "code": "webpack-vite-nextjs-reversing",
+      "name": "webpack-vite-nextjs-reversing",
+      "category": "reverse",
+      "desc": "Webpack/Vite/NextJS 逆向",
+      "rel": "_modules/webpack-vite-nextjs-reversing",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 5
+    },
+    {
+      "code": "websocket-grpc-analysis",
+      "name": "websocket-grpc-analysis",
+      "category": "reverse",
+      "desc": "WebSocket/gRPC 分析工作流",
+      "rel": "_modules/websocket-grpc-analysis",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 5
+    },
+    {
+      "code": "websocket-live-reversing",
+      "name": "websocket-live-reversing",
+      "category": "reverse",
+      "desc": "WebSocket 实时逆向",
+      "rel": "_modules/websocket-live-reversing",
+      "builtin": false,
+      "domain": "protocol-web",
+      "rating": 5
+    },
+    {
+      "code": "windows-kernel",
+      "name": "windows-kernel",
+      "category": "reverse",
+      "desc": "Windows 内核安全与保护机制",
+      "rel": "_modules/windows-kernel",
+      "builtin": false,
+      "domain": "firmware-kernel",
+      "rating": 8
+    },
+    {
+      "code": "windows-license-crack",
+      "name": "windows-license-crack",
+      "category": "crack",
+      "desc": "Windows 软件授权逆向与运行时绕过",
+      "rel": "_modules/windows-license-crack",
+      "builtin": false,
+      "domain": "license-auth",
+      "rating": 10
+    },
+    {
+      "code": "wireless-attacks",
+      "name": "wireless-attacks",
+      "category": "pentest",
+      "desc": "无线攻击（WiFi WPA/WEP/蓝牙）",
+      "rel": "_modules/wireless-attacks",
+      "builtin": false,
+      "domain": "network-wireless",
+      "rating": 5
+    },
+    {
+      "code": "world-to-screen",
+      "name": "world-to-screen",
+      "category": "game",
+      "desc": "3D 世界坐标转屏幕投影",
+      "rel": "_modules/world-to-screen",
+      "builtin": false,
+      "domain": "overlay-rendering",
+      "rating": 3
+    },
+    {
+      "code": "xigong-funk-hikari",
+      "name": "xigong-funk-hikari",
+      "category": "assist",
+      "desc": "Hikari-LLVM/OLLVM 去混淆与明文还原（ELF/SO，MBA/BCF/BR 调度跳转）",
+      "rel": "_modules/xigong-funk-hikari",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    },
+    {
+      "code": "xref-trace",
+      "name": "xref-trace",
+      "category": "reverse",
+      "desc": "交叉引用追踪",
+      "rel": "_modules/xref-trace",
+      "builtin": false,
+      "domain": "native-binary",
+      "rating": 3
+    },
+    {
+      "code": "yingan-tuoxiu",
+      "name": "yingan-tuoxiu",
+      "category": "assist",
+      "desc": "影安/影珀 Android APK 壳还原与稳定重建（root DEX 异常/v.m.p/abcd 壳回调）",
+      "rel": "_modules/yingan-tuoxiu",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 5
+    },
+    {
+      "code": "zxwn-activation",
+      "name": "zxwn-activation",
+      "category": "assist",
+      "desc": "ZXWN 激活词路由",
+      "rel": "_modules/zxwn-activation",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 2
+    },
+    {
+      "code": "西宫影安老版本脱修",
+      "name": "西宫影安老版本脱修",
+      "category": "assist",
+      "desc": "影安/影珀 Android APK 壳还原与稳定重建（老版本专用入口）",
+      "rel": "_modules/西宫影安老版本脱修",
+      "builtin": false,
+      "domain": "security-engineering",
+      "rating": 9
+    }
+  ]
+}

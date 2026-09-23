@@ -1,0 +1,5 @@
+interface:
+  display_name: "批量创建会话"
+  short_description: "按标题批量添加侧边栏会话"
+  brand_color: "#2563EB"
+  default_prompt: "Use $session-batch-creator to create 5 new sidebar sessions named 网站开发."

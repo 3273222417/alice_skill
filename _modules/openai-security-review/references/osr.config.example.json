@@ -1,0 +1,76 @@
+{
+  "target": {
+    "repo": "/path/to/repo",
+    "url": "http://localhost:5173"
+  },
+  "workspace": {
+    "path": "/tmp/openai-security-review-demo"
+  },
+  "auth": {
+    "enabled": false,
+    "loginUrl": "http://localhost:5173/login",
+    "usernameEnv": "OSR_USERNAME",
+    "passwordEnv": "OSR_PASSWORD",
+    "usernameSelector": "input[name=\"email\"]",
+    "passwordSelector": "input[name=\"password\"]",
+    "submitSelector": "button[type=\"submit\"]",
+    "successUrlContains": "/dashboard"
+  },
+  "crawl": {
+    "enabled": true,
+    "maxPages": 20,
+    "timeout": 10000
+  },
+  "sourceMap": {
+    "enabled": true
+  },
+  "backend": {
+    "enabled": true,
+    "frameworkHints": [],
+    "fingerprint": true,
+    "routeMap": true,
+    "authzMap": true,
+    "dataflowRiskMap": true,
+    "validationCoverage": true,
+    "serverChecks": true,
+    "apiSpecMap": true,
+    "apiSpecPaths": [],
+    "runtimeValidation": false,
+    "runtimeProbePaths": [],
+    "runtimeMaxEndpoints": 50,
+    "runtimeTimeout": 10000
+  },
+  "accessMatrix": {
+    "enabled": false,
+    "maxEndpoints": 50,
+    "timeout": 10000,
+    "includeSourceOnly": true,
+    "includeUnknownSourceAsGet": false,
+    "profiles": [
+      {
+        "name": "anonymous"
+      },
+      {
+        "name": "admin",
+        "storageState": "/tmp/openai-security-review-demo/state/authenticated-storage-state.json",
+        "expectAccess": true
+      }
+    ],
+    "paths": []
+  },
+  "validation": {
+    "timeout": 10
+  },
+  "active": {
+    "enabled": false,
+    "authorized": false,
+    "executeSafeProbes": false,
+    "planClasses": ["auth", "authz", "xss", "redirect"],
+    "probeClasses": ["cors", "redirect", "xss", "error", "exposure"],
+    "allowRemote": false,
+    "timeout": 10
+  },
+  "report": {
+    "out": ""
+  }
+}

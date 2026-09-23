@@ -1,0 +1,50 @@
+---
+name: alice-inject
+description: 注入总路由手册（检测当前客户端→只注入该客户端全局提示词，显示给用户，不确定就问不猜）。触发词：注入提示词/注入路由/注入总路由/连接总路由/inject。
+x-alice-class: assist
+---
+
+# alice-inject — 注入总路由到当前客户端（只注入当前，绝不批量）
+
+> 核心规则（硬性）：
+> 1. **只注入用户当前正在使用的那个客户端**；其余客户端一律不动。
+> 2. 检测结果 + 写入目标**必须显示给用户看**。
+> 3. 检测不确定 → **询问用户**是哪个客户端，再用 `--client` 显式指定；**禁止猜测**。
+
+## 执行（AI 步骤）
+
+1. 检测 + 显示（不写文件）：
+   ```bash
+   python "<技能根>/aliceskill/scripts/inject_route_prompt.py" --check
+   ```
+   - 输出会给出：检测到的客户端、置信度、证据（进程链/技能根/环境变量）、仅该客户端的注入目标。
+   - 把这段**原文展示给用户**。
+2. 置信 `low` 或用户目测不对 → 问用户「你现在用的是哪个客户端（codex/dsh/pi/workbuddy/omp/claude/zcode/cursor）？」
+   拿到答案后带 `--client` 重跑 --check 复核。
+3. 预览注入块：
+   ```bash
+   python "<技能根>/aliceskill/scripts/inject_route_prompt.py" --dry-run
+   ```
+4. 执行注入（备份 + 幂等替换，标记块恒为 1 个）：
+   ```bash
+   python "<技能根>/aliceskill/scripts/inject_route_prompt.py"
+   ```
+5. 向用户报：客户端、目标文件路径、块数核对结果、备份路径；并提示**新会话生效**。
+
+## 注入内容（总路由连接）
+
+标记块 `<!-- ALICE-ROUTE:BEGIN ... --> ... <!-- ALICE-ROUTE:END -->`，含：
+
+- 技能根绝对路径；六类类词路由（破/逆/渗/挂/智/助 → 六个路由页 SKILL.md）；
+- 总菜单 `aliceskill/SKILL.md`（「Alice」/「攻」/「防」入口）；
+- 取模块纪律（`_modules/<模块id>/SKILL.md` 目录结构，兼容平铺；最多取 4 个，优先高评分）；
+- 维护闭环入口（alice-assist 页 + 本手册）。
+
+## 语义与边界
+
+- 幂等：重复运行=替换更新，只动 ALICE-ROUTE 块，文件其余内容原样保留。
+- 备份：首次注入前 `*.bak-alice-inject`（只建一次，保住注入前原件）。
+- 不碰其它客户端：脚本硬编码「仅当前客户端目标」，无「全部注入」选项。
+- 与启动器的注入块（`<!-- WZ-INJECT:BEGIN -->`）互不干扰，各自管理各自标记。
+- 退出码：0 成功；3 客户端不确定（→问用户）；4 无可用目标。
+- 复验：`--check` 只看不入；注入后重跑 `--check` 应显示相同客户端与目标。

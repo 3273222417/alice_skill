@@ -1,0 +1,25 @@
+## Engagement data
+engagements/
+
+# Local payloads
+local-payloads/
+
+# MCP config
+.mcp.json
+
+# Environment variables
+.env
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~

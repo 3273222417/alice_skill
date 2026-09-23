@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-09-23 12:13:01",
+  "files": {
+    "SKILL.md": {
+      "sha256": "50642bb6accc00e90f75e29b115308b538ba92cc14669b115579f8401079d616",
+      "size": 12229
+    },
+    "config/authorization.json": {
+      "sha256": "f7279204625406d8982b7343d6ad6d997329ac6fc125441938504718d4961687",
+      "size": 661
+    },
+    "config/command_aliases.json": {
+      "sha256": "8d7cdd7b78ff90ca5bad80507129a2d4b41ae136483ace32190cc2ae34ed5e37",
+      "size": 110117
+    },
+    "config/system_objects.json": {
+      "sha256": "452b55519396c6f5b2fd1bfb125bf25e3e57a29e6bf1d65588df5c12095609f0",
+      "size": 3570
+    },
+    "config/task_guard.json": {
+      "sha256": "a16d8a918100962785edf6a0747cadfa0f235900c9c77dcc147f29e829657352",
+      "size": 1182
+    },
+    "config/word_filter.json": {
+      "sha256": "a18ea929631c9a3454b27d758aabbbad5e3d63abda53967b82d90577392eceaf",
+      "size": 380
+    },
+    "references/HELP.md": {
+      "sha256": "59e68b43bec9aed86f8e1b3f7feed5b462702c970793614a88baf3e01aac6bb6",
+      "size": 19839
+    },
+    "references/MASTER_MANUAL.md": {
+      "sha256": "f99952963686d838c01407af39429cb3f643ec71b170c6e098d65b70c13a1537",
+      "size": 69787
+    },
+    "references/battle_manual.md": {
+      "sha256": "84200911645b24ee81916a7302eb01e45c8d80834902a485a82a13f1741e573c",
+      "size": 5317
+    },
+    "references/command_map.md": {
+      "sha256": "00e36c3f049e33af1607f5571d923f9c9cba4c9085e8d07021023b42f3f0e11f",
+      "size": 127909
+    },
+    "scripts/rebuild_menu.py": {
+      "sha256": "0cd87e8c4233f21b605bac98a2526438720649bdf5bad0e10869253648b683ca",
+      "size": 36493
+    },
+    "scripts/build_commands.py": {
+      "sha256": "365ba8b03233b3bae5e6517fcc39dd349432a6ffa86dab8749fc25334991c9fd",
+      "size": 12081
+    },
+    "scripts/check_auth_policy.py": {
+      "sha256": "977dba5eb09626f013fe9ae4ca926eee0d311a5ce4fab2ed9865571c99bf89c6",
+      "size": 5006
+    },
+    "scripts/counter_attack.py": {
+      "sha256": "d1738dd7715fb157f13ff8d685f971395803410760ad3b639ceacfe2d0d23aba",
+      "size": 15782
+    },
+    "scripts/task_guard.py": {
+      "sha256": "d9e972d44865b0c0263e70f3ed79f3e6a2c7a003f9a005697c0a0ad3e5cb262c",
+      "size": 6770
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "active": true,
+  "last_route": {
+    "event": "route",
+    "mode": "class",
+    "class_route": "alice-assist",
+    "category": "assist 技能指令",
+    "router": "alice-assist",
+    "chain": [
+      "target-lock",
+      "open-router-skill",
+      "pick-domain",
+      "pick-module",
+      "execute",
+      "verify",
+      "deliver"
+    ]
+  },
+  "time": "2026-09-24 01:25:49"
+}
