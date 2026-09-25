@@ -1,6 +1,6 @@
 {
   "menu": "alice",
-  "generated_at": "2026-09-24 01:21:21",
+  "generated_at": "2026-09-26 00:56:47",
   "skills_root": "C:\\Users\\alicewe\\Desktop\\test",
   "modules_root": "C:\\Users\\alicewe\\Desktop\\test\\_modules",
   "classes": [
@@ -124,6 +124,16 @@
       "category": "assist",
       "desc": "注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问）",
       "rel": "_modules/alice-inject",
+      "builtin": false,
+      "domain": "routing-skill-engineering",
+      "rating": 9
+    },
+    {
+      "code": "alice-mcp",
+      "name": "alice-mcp",
+      "category": "assist",
+      "desc": "MCP 热启动网关：不写客户端 config，agent 经 mcp_gateway 直接调用工具；自检/添加/热开关/目录包装",
+      "rel": "_modules/alice-mcp",
       "builtin": false,
       "domain": "routing-skill-engineering",
       "rating": 9

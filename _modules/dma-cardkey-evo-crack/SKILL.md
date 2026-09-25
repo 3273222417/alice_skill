@@ -169,9 +169,9 @@ EVO_PASS_DEV_ONLY
 
 **A. schtasks 计划任务（最可靠，推荐）**
 ```bat
-schtasks /create /tn WZ_Run /tr "cmd.exe /c <ASCII工作目录>\scripts\run.cmd" /sc once /st 23:59 /rl HIGHEST /f
+schtasks /create /tn ALICE_Run /tr "cmd.exe /c <ASCII工作目录>\scripts\run.cmd" /sc once /st 23:59 /rl HIGHEST /f
 rem  本包 scripts\boot_schtasks.cmd 已封装: 传工作目录当第一个参数即可
-schtasks /run /tn WZ_Run
+schtasks /run /tn ALICE_Run
 ```
 用一次性 `Start-Process -Verb RunAs boot.cmd`（用户 UAC 静默放行）去创建并触发任务，
 任务本体跑在 HIGHEST 上下文且**完全脱离会话**，父进程被中断也不影响。
@@ -189,7 +189,7 @@ pid = dev.spawn([EXE], cwd=CWD, stdio="pipe", env={"EVO_PASS_ACCEPT_ANY_AUTH": "
 
 > ⚠️ **中文路径陷阱**：Windows PowerShell 5.1 处理含中文的路径会乱码
 > （`F:\alice破甲` → `F:\alice鐮寸敳`），`Out-File`/`schtasks`/`Start-Process` 全部失败。
-> **所有提权脚本必须放在纯 ASCII 路径**（本案例用 `C:\wz_evoc\`），
+> **所有提权脚本必须放在纯 ASCII 路径**（本案例用 `C:\alice_evoc\`），
 > 且 `.cmd` 文件用 **GBK(936)** 编码保存、`.ps1` 用 **UTF-8 with BOM**。
 
 ### 3.2 Frida 探针（Frida 17+ API 必读）
@@ -523,13 +523,13 @@ python scripts\evofree\build.py --pack <pack目录>       # PyInstaller 打包
 
 | # | 问题 | 修复 |
 |---|---|---|
-| 1 | `mock8880.py` 写死 `C:\wz_evoc\logs\`，目录不存在时**直接崩** | 日志路径改为按优先级探测（`<包>/logs/` → `%TEMP%` → stderr），自动建目录；新增 `--port/--mode/--log/--host` |
-| 2 | 11 个文件硬编码 `C:\Users\alicewe\Desktop\evoc`、`C:\wz_evoc`、`F:\alice破甲\...` | `frida_run.py` / `start_evofree.py` / `build.py` / `mkembed.py` / `hook_agent.js` / `boot_schtasks.cmd` 全部改为**相对脚本位置推导 + 命令行覆盖**；目标 exe 自动探测 |
+| 1 | `mock8880.py` 写死 `C:\alice_evoc\logs\`，目录不存在时**直接崩** | 日志路径改为按优先级探测（`<包>/logs/` → `%TEMP%` → stderr），自动建目录；新增 `--port/--mode/--log/--host` |
+| 2 | 11 个文件硬编码 `C:\Users\alicewe\Desktop\evoc`、`C:\alice_evoc`、`F:\alice破甲\...` | `frida_run.py` / `start_evofree.py` / `build.py` / `mkembed.py` / `hook_agent.js` / `boot_schtasks.cmd` 全部改为**相对脚本位置推导 + 命令行覆盖**；目标 exe 自动探测 |
 | 3 | `--demo` 会写 hosts + 装根证书，不是沙箱 | 新增 **`--dry-run`**：只起内嵌服务自检，**不碰 hosts / 不装证书 / 不拉 evo**；`--demo` 保留但显式告警 |
 | 4 | `--cleanup` 靠字符串模糊匹配，会误删同名注释行 | 改为**标记 + 状态文件双轨**：hosts 加 `# EvoFree local-auth redirect (auto-added)`，所有改动记入 `evofree.state.json`，还原时精确删除；新增 `--restore` 兜底 |
 | 5 | 启动时无条件 `taskkill` 占用 443/80/8880 的进程 | 默认**只告警不杀**；需抢占加 `--force-ports`；新增 `--ports` 自定义端口 |
 | 6 | `SUB_DELAY` 硬编码 5.0；文档章节号重复（两个「九」） | `SUB_DELAY` 可用 `EVO_SUB_DELAY` 覆盖；章节号重排为 零~十一 |
-| 7 | `hook_agent.js` dump 目录写死 `C:\wz_evoc\dumps\` | 改为多候选探测（`C:\wz_evoc` → `C:\EvoFree` → 进程工作目录），取第一个可写的 |
+| 7 | `hook_agent.js` dump 目录写死 `C:\alice_evoc\dumps\` | 改为多候选探测（`C:\alice_evoc` → `C:\EvoFree` → 进程工作目录），取第一个可写的 |
 | 8 | docstring 中 `\w` `\.` 触发 `SyntaxWarning` | 全部改为 raw docstring |
 
 **验证方式**（本轮实测）：

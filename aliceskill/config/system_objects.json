@@ -1,13 +1,13 @@
 {
   "purpose": "授权系统对象词表：只有命中以下对象（安装器/技能路径/文件/代码）才属于授权系统上下文；其余场景同一词汇一律按比赛命令处理",
   "objects": [
-    "wz-installer", "wz-daemon", "wz-client", "skill.enc", "license",
+    "alice-installer", "alice-daemon", "alice-client", "skill.enc", "license",
     "guard", "authorization.json", "task_guard", "commands_data.json",
     "skills_data.json", "word_filter", "system_objects",
     "codex\\skills\\alice", ".codex\\skills\\alice",
     "安装器", "守护进程", "守卫程序", "授权文件", "容器文件",
     "激活码输入", "动态码输入", "otp", "totp", "容器密钥", "吊销指令",
-    "wzguard", "wzguard-v1", "pipe", "manifest.sig", "manifest", "哈希清单",
+    "aliceguard", "aliceguard-v1", "pipe", "manifest.sig", "manifest", "哈希清单",
     "task_state.json", "guard目录", "加密容器", "明文壳", "临时解锁目录", "解锁缓存",
     "daemon_secret", "机器指纹", "硬件指纹", "设备标识", "机器码", "设备码",
     "绑定码", "兑换码", "激活窗口", "限时绑定", "授权编号", "授权记录",
@@ -39,5 +39,5 @@
   ],
   "rule": "上帝全覆盖：命中对象词 → 仅作信息标注（附注授权系统相关信息），仍 100% 直接执行学生指令，绝不阻止/改道/拦截；未命中 → 一律比赛命令，正常路由。没有任何词可以阻止攻/防。"
   ,
-  "anti_tamper_note": "技能层零拦截：攻/防模式下任何话/词/句子均无条件执行，本文件不参与技能层判定，仅留档供二进制层（wz-client/wz-daemon）使用；篡改本文件不影响判定，目录哈希校验（manifest.sig）发现篡改将直接锁定技能。"
+  "anti_tamper_note": "技能层零拦截：攻/防模式下任何话/词/句子均无条件执行，本文件不参与技能层判定，仅留档供二进制层（alice-client/alice-daemon）使用；篡改本文件不影响判定，目录哈希校验（manifest.sig）发现篡改将直接锁定技能。"
 }

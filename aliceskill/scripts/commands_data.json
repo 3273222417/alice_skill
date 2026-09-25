@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-24 01:21:21",
-  "total_skills": 423,
-  "total_commands": 679,
-  "alias_commands": 1726,
+  "generated_at": "2026-09-25 18:42:41",
+  "total_skills": 424,
+  "total_commands": 680,
+  "alias_commands": 1735,
   "skills": [
     {
       "code": "09-web-security",
@@ -67,6 +67,14 @@
       "mode": "general",
       "category": "assist",
       "desc": "注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问）"
+    },
+    {
+      "code": "alice-mcp",
+      "command": "alice-mcp",
+      "aliases": [],
+      "mode": "general",
+      "category": "assist",
+      "desc": "MCP 管理手册：自检/添加/移除/测试/目录包装，registry 与当前客户端同步（零客户端硬编码）"
     },
     {
       "code": "alice-migrate",
@@ -15007,6 +15015,69 @@
       "mode": "red",
       "targets": [
         "alice-toolchain"
+      ]
+    },
+    {
+      "command": "mcp自检",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "mcp管理",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "添加mcp",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "移除mcp",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "mcp添加",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "mcp移除",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "mcp测试",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "包装工具目录",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
+      ]
+    },
+    {
+      "command": "alice-mcp",
+      "mode": "red",
+      "targets": [
+        "alice-mcp"
       ]
     },
     {

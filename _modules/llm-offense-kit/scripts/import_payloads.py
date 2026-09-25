@@ -31,7 +31,7 @@ SKILL_DIR = os.path.dirname(THIS_DIR)
 PAYLOAD_OUT = os.path.join(SKILL_DIR, "payloads", "owasp_payloads.json")
 CHS_OUT = os.path.join(SKILL_DIR, "references", "cheatsheet_2026.md")
 
-VENDORS = r"C:\Users\Administrator\Documents\openclaw\wz-license\skill-vendors"
+VENDORS = r"C:\Users\Administrator\Documents\openclaw\alice-license\skill-vendors"
 SRC_JSON = os.path.join(VENDORS, "prompt-injector", "public", "assets", "payloads", "all-attack-payloads.json")
 SRC_YAML = os.path.join(VENDORS, "llm-red-teamer", "payloads", "payloads.yaml")
 SRC_CHS = os.path.join(VENDORS, "AI-Prompt-Injection-Cheatsheet", "README.md")

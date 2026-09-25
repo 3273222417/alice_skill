@@ -4,8 +4,8 @@
 Alice封印工具（技能包加密 + 防伪标识）
 =====================================
 功能：
-  ① 把技能包 zip 用 AES-GCM 加密成密封文件（.wzseal），无法单独使用/拆包
-  ② 生成唯一防伪标识（序列号 WZ-XXXX-XXXX + 持有人水印 + 时间戳 + 哈希签名）
+  ① 把技能包 zip 用 AES-GCM 加密成密封文件（.aliceseal），无法单独使用/拆包
+  ② 生成唯一防伪标识（序列号 ALICE-XXXX-XXXX + 持有人水印 + 时间戳 + 哈希签名）
   ③ 密钥内嵌 exe（混淆存储），解密校验失败即拒装
   ④ 防伪标识写入技能包，安装后技能内可见——倒卖必留痕
 
@@ -34,7 +34,7 @@ except Exception:
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
-MAGIC = b"WZSEAL\x00\x01"
+MAGIC = b"ALICESEAL\x00\x01"
 IV_LEN = 12
 TAG_LEN = 16
 SALT = b"alice-redblue-2026-seal-salt-v1"
@@ -67,7 +67,7 @@ def banner(title: str, sub: str = "") -> None:
 
 def _key() -> bytes:
     """派生 AES 密钥（混淆内嵌，exe 反编译难度 +1）。"""
-    seed = b"WZ!@#RedBlue2026*&Sealed"
+    seed = b"ALICE!@#RedBlue2026*&Sealed"
     xored = bytes(b ^ 0x5A for b in seed)
     return hashlib.pbkdf2_hmac("sha256", xored, SALT, 12000, dklen=32)
 
@@ -88,7 +88,7 @@ def seal(bundle_path: str, owner: str, out_path: str, serial: str | None = None)
     serial = serial or gen_serial()
     payload = open(bundle_path, "rb").read()
     info = {
-        "magic": "WZSEAL",
+        "magic": "ALICESEAL",
         "format": "v1",
         "serial": serial,
         "owner": owner,
@@ -170,7 +170,7 @@ def cmd_selfcheck(a) -> int:
         ("AES-GCM 可用", True),
         ("密钥派生", len(_key()) == 32),
         ("序列号格式", len(gen_serial().split("-")) == 4),
-        ("魔数", MAGIC.startswith(b"WZSEAL")),
+        ("魔数", MAGIC.startswith(b"ALICESEAL")),
     ]
     all_ok = True
     for name, passed in checks:

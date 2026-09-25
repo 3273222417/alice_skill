@@ -109,7 +109,7 @@ def call_tool(name: str, args: dict) -> dict:
 
 
 def dynamic_code(seed: bytes) -> str:
-    """HMAC-SHA256(seed, 时间窗口30s) -> 8位码（与 wz-tool 动态码算法一致）"""
+    """HMAC-SHA256(seed, 时间窗口30s) -> 8位码（与 alice-tool 动态码算法一致）"""
     window = int(time.time()) // 30
     msg = window.to_bytes(8, "big")
     digest = hmac.new(seed, msg, hashlib.sha256).digest()

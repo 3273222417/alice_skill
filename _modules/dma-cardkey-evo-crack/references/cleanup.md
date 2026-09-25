@@ -9,23 +9,23 @@
 分析期间用 `schtasks` 建的一次性任务，**必须删**：
 
 ```bat
-schtasks /delete /tn WZ_Run /f
-schtasks /delete /tn WZ_E5 /f
-schtasks /delete /tn WZ_E6 /f
-schtasks /delete /tn WZ_E7 /f
-schtasks /delete /tn WZ_CB /f
-schtasks /delete /tn WZ_M2 /f
+schtasks /delete /tn ALICE_Run /f
+schtasks /delete /tn ALICE_E5 /f
+schtasks /delete /tn ALICE_E6 /f
+schtasks /delete /tn ALICE_E7 /f
+schtasks /delete /tn ALICE_CB /f
+schtasks /delete /tn ALICE_M2 /f
 ```
 
 核对：
 
 ```powershell
-schtasks /query /fo LIST | Select-String "WZ_"
+schtasks /query /fo LIST | Select-String "ALICE_"
 ```
 
 **本案例状态**：全部已删除（2026-09-18 实测）。
 
-> 实测遗留任务名：`WZ_CB` `WZ_E5` `WZ_E6` `WZ_E7` `WZ_EvocRun` `WZ_EvocRun4` `WZ_M2`
+> 实测遗留任务名：`ALICE_CB` `ALICE_E5` `ALICE_E6` `ALICE_E7` `ALICE_EvocRun` `ALICE_EvocRun4` `ALICE_M2`
 > 非提权 `schtasks /delete` 会报 `Access is denied`，**必须提权删**（RunAs 一个纯 ASCII 路径的 .cmd）。
 
 ---
@@ -77,7 +77,7 @@ Get-ChildItem C:\Evo -ErrorAction SilentlyContinue
 ## 5. 提权脚本区
 
 ```
-C:\wz_evoc\           本次分析的提权脚本 + 日志 + dump 存放处
+C:\alice_evoc\           本次分析的提权脚本 + 日志 + dump 存放处
                       (v1.0.2 起脚本改为相对自身定位, 这个目录只在本案例里出现)
 ```
 
@@ -85,7 +85,7 @@ C:\wz_evoc\           本次分析的提权脚本 + 日志 + dump 存放处
 
 ```powershell
 # 确认路径后执行
-Remove-Item -LiteralPath "C:\wz_evoc" -Recurse -Force
+Remove-Item -LiteralPath "C:\alice_evoc" -Recurse -Force
 
 # ---- v1.0.2: 启动器自带的精确还原 (推荐, 不会误删) ----
 #   EvoFree.exe --cleanup    按 evofree.state.json 精确删除本次改动
@@ -118,7 +118,7 @@ Remove-Item -LiteralPath "C:\wz_evoc" -Recurse -Force
 
 ## 7. 分析完的检查清单
 
-- [ ] `schtasks` 无 `WZ_*` 残留
+- [ ] `schtasks` 无 `ALICE_*` 残留
 - [ ] hosts 无 `scheats` / `freakluke` 条目
 - [ ] 根证书无异常自签项
 - [ ] `C:\Evo` 不存在（或已清理）

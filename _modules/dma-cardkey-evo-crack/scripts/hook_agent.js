@@ -364,9 +364,9 @@ w('modules: '+Process.enumerateModules().map(function(m){return m.name;}).join('
 // ---------- RPC ----------
 
 // ---- 直接落盘 (exit gate 内安全调用) ----
-// 修复: 不再写死 C:\wz_evoc; 依次尝试多个候选目录, 取第一个可写的
+// 修复: 不再写死 C:\alice_evoc; 依次尝试多个候选目录, 取第一个可写的
 var DUMP_CANDS = [
-  "C:\\wz_evoc\\dumps\\",
+  "C:\\alice_evoc\\dumps\\",
   "C:\\EvoFree\\dumps\\",
   (function(){ try { return Process.getCurrentDir() + "\\dumps\\"; } catch(e){ return null; } })(),
   (function(){ try { return Process.getCurrentDir() + "\\dumps\\"; } catch(e){ return null; } })()
@@ -379,7 +379,7 @@ function ensureDumpDir(){
     if (!c) continue;
     try {
       // Frida 没有 mkdir, 用写一个探测文件来验证可写性
-      var probe = new File(c + ".wz_probe", 'wb');
+      var probe = new File(c + ".alice_probe", 'wb');
       probe.write(ptr(0).readByteArray(1)); probe.close();
       DUMPDIR = c;
       w('dump dir = ' + c);

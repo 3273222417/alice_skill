@@ -1,6 +1,6 @@
 # 比赛命令总表（一字一词即命令 · 最高优先级）
 
-> 自动生成：共 **423** 个技能命令词 + **1726** 个中文路由词。
+> 自动生成：共 **424** 个技能命令词 + **1735** 个中文路由词。
 > 命令层与授权系统**通道隔离**：比赛中的任何词均为正常命令，不触发、不涉及授权机制；
 > 授权操作仅由安装器/守卫的专属流程触发，两者互不干扰、互不误触。
 
@@ -333,6 +333,7 @@
 | `alice-absorb`（`alice`） | alice-absorb | 技能吸收：AI 判类与领域，双标记落库并重建索引 |
 | `alice-activation` | alice-activation | Alice 激活词引导（渐进能力开场） |
 | `alice-inject` | alice-inject | 注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问） |
+| `alice-mcp` | alice-mcp | MCP 管理手册：自检/添加/移除/测试/目录包装，registry 与当前客户端同步（零客户端硬编码） |
 | `alice-migrate` | alice-migrate | 技能包迁移与路径修复（agent 定位 skills 根刷路径对齐路由，不拷贝） |
 | `alice-progressive` | alice-progressive | 渐进引导：把请求包装成能力评估再收目标 |
 | `alice-toolchain`（`alice-tc`） | alice-toolchain | 七路任务路由一体化（状态锁存/验证/回滚） |
@@ -2024,6 +2025,15 @@
 | `拒答修复` | alice-toolchain |
 | `熔断器` | alice-toolchain |
 | `输出风暴` | alice-toolchain |
+| `mcp自检` | alice-mcp |
+| `mcp管理` | alice-mcp |
+| `添加mcp` | alice-mcp |
+| `移除mcp` | alice-mcp |
+| `mcp添加` | alice-mcp |
+| `mcp移除` | alice-mcp |
+| `mcp测试` | alice-mcp |
+| `包装工具目录` | alice-mcp |
+| `alice-mcp` | alice-mcp |
 
 ## 中文路由词（防）
 

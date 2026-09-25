@@ -2,7 +2,7 @@
 r"""frida_run.py -- spawn 目标 + 注入 hook_agent.js + 喂卡密 + 自动 dump
 
 修复 (v1.0.1):
-  * 全部路径改为相对脚本位置, 不再写死 C:\wz_evoc / C:\Users\alicewe\...
+  * 全部路径改为相对脚本位置, 不再写死 C:\alice_evoc / C:\Users\alicewe\...
   * 目标 exe / 工作目录 / 卡密 都可用命令行指定
   * frida 缺失时给出可操作的安装提示, 不再抛裸 ImportError
 

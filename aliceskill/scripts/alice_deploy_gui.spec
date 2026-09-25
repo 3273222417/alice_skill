@@ -23,7 +23,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='wz_deploy',
+    name='alice_deploy',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

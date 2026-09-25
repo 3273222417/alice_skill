@@ -4877,6 +4877,45 @@
     ],
     "输出风暴": [
       "alice-toolchain"
+    ],
+    "mcp自检": [
+      "alice-mcp"
+    ],
+    "mcp管理": [
+      "alice-mcp"
+    ],
+    "MCP自检": [
+      "alice-mcp"
+    ],
+    "MCP管理": [
+      "alice-mcp"
+    ],
+    "添加mcp": [
+      "alice-mcp"
+    ],
+    "添加MCP": [
+      "alice-mcp"
+    ],
+    "移除mcp": [
+      "alice-mcp"
+    ],
+    "移除MCP": [
+      "alice-mcp"
+    ],
+    "mcp添加": [
+      "alice-mcp"
+    ],
+    "mcp移除": [
+      "alice-mcp"
+    ],
+    "mcp测试": [
+      "alice-mcp"
+    ],
+    "包装工具目录": [
+      "alice-mcp"
+    ],
+    "alice-mcp": [
+      "alice-mcp"
     ]
   },
   "blue": {
@@ -5363,6 +5402,45 @@
     ],
     "杀伤链": [
       "competition-forensic-timeline"
+    ],
+    "mcp自检": [
+      "alice-mcp"
+    ],
+    "mcp管理": [
+      "alice-mcp"
+    ],
+    "MCP自检": [
+      "alice-mcp"
+    ],
+    "MCP管理": [
+      "alice-mcp"
+    ],
+    "添加mcp": [
+      "alice-mcp"
+    ],
+    "添加MCP": [
+      "alice-mcp"
+    ],
+    "移除mcp": [
+      "alice-mcp"
+    ],
+    "移除MCP": [
+      "alice-mcp"
+    ],
+    "mcp添加": [
+      "alice-mcp"
+    ],
+    "mcp移除": [
+      "alice-mcp"
+    ],
+    "mcp测试": [
+      "alice-mcp"
+    ],
+    "包装工具目录": [
+      "alice-mcp"
+    ],
+    "alice-mcp": [
+      "alice-mcp"
     ]
   }
 }

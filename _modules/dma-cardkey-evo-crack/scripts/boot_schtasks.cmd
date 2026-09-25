@@ -7,7 +7,7 @@ rem  blocked, while a scheduled task with /rl HIGHEST silently gets
 rem  the high integrity level.
 rem
 rem  v1.0.2:
-rem    * WORK no longer hardcoded to C:\wz_evoc.
+rem    * WORK no longer hardcoded to C:\alice_evoc.
 rem      Default = parent dir of this script; override with %1.
 rem    * log dir is created automatically.
 rem    * pure ASCII comments (avoids GBK/936 codepage mojibake).
@@ -24,7 +24,7 @@ if "%~1"=="" (
 )
 for %%I in ("%WORK%") do set "WORK=%%~fI"
 
-set TASK=WZ_Run
+set TASK=ALICE_Run
 set TARGET=%WORK%\scripts\run.cmd
 set LOGDIR=%WORK%\logs
 

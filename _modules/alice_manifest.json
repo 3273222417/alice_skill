@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24 01:21:21",
+  "generated_at": "2026-09-26 00:56:47",
   "classes": {
     "crack": [
       "card-key",
@@ -327,6 +327,7 @@
       "alice-absorb",
       "alice-activation",
       "alice-inject",
+      "alice-mcp",
       "alice-migrate",
       "alice-progressive",
       "alice-toolchain",
@@ -517,6 +518,14 @@
       "name_cn": "技能指令",
       "desc": "注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问）",
       "rel": "_modules/alice-inject"
+    },
+    "alice-mcp": {
+      "class": "assist",
+      "router": "alice-assist",
+      "domain": "routing-skill-engineering",
+      "name_cn": "技能指令",
+      "desc": "MCP 热启动网关：不写客户端 config，agent 经 mcp_gateway 直接调用工具；自检/添加/热开关/目录包装",
+      "rel": "_modules/alice-mcp"
     },
     "alice-migrate": {
       "class": "assist",

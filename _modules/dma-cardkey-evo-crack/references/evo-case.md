@@ -209,7 +209,7 @@ BCryptGenRandom
 ### 4.1 产物
 
 ```
-C:\wz_evoc\dumps\
+C:\alice_evoc\dumps\
   mod_Evo_Crack.exe.bin       37,040,128   <- 主模块完整镜像, 熵 7.7875
   mod_ntdll.dll.bin            2,519,040
   mod_KERNEL32.DLL.bin           831,488
@@ -414,5 +414,5 @@ host: freakluke.me:8880
 | `evo_pass.jsonl` | 未生成 |
 | 文件签名/哈希 | 未修改（未 patch 任何二进制） |
 
-分析用的提权脚本集中在 `C:\wz_evoc\`，产物在 `C:\wz_evoc\dumps\`、
-日志在 `C:\wz_evoc\logs\`。
+分析用的提权脚本集中在 `C:\alice_evoc\`，产物在 `C:\alice_evoc\dumps\`、
+日志在 `C:\alice_evoc\logs\`。

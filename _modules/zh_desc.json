@@ -422,5 +422,6 @@
   "ash12-elf-complete-flow": "Ash-12 型 Android ELF 伪装脚本（AEDEVPK1/RC4）载荷还原与本地校验替换全流程",
   "alice-absorb": "技能吸收：AI 判类与领域，双标记落库并重建索引",
   "alice-inject": "注入总路由手册（检测当前客户端只注入它，显示给用户，不确定就问）",
-  "gpt-cursor-register-suite": "GPT/Cursor 注册机套件：协议注册+接码OTP+Turnstile打码+sentinel PoW+TLS指纹+Cursor授权注入"
+  "gpt-cursor-register-suite": "GPT/Cursor 注册机套件：协议注册+接码OTP+Turnstile打码+sentinel PoW+TLS指纹+Cursor授权注入",
+  "alice-mcp": "MCP 热启动网关：不写客户端 config，agent 经 mcp_gateway 直接调用工具；自检/添加/热开关/目录包装"
 }

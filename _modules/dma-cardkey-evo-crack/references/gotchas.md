@@ -84,7 +84,7 @@ F:\alice破甲\resources\...   ->  实际收到 F:\alice鐮寸敳\resources\...
 1. 提权/调度脚本放纯 ASCII 路径。
 2. .cmd 用 GBK(936) 保存，.ps1 用 UTF-8 BOM 保存。
 3. 脚本内不要内联中文。
-1. **所有提权/调度脚本放纯 ASCII 路径**（本案例专用 C:\wz_evoc\）。
+1. **所有提权/调度脚本放纯 ASCII 路径**（本案例专用 C:\alice_evoc\）。
 2. **.cmd / .bat 用 GBK(936) 保存**，.ps1 用 **UTF-8 with BOM** 保存。
 3. 脚本内**不要内联中文**；需要中文就 chcp 65001，或干脆全英文。
 
@@ -94,7 +94,7 @@ $gbk = [System.Text.Encoding]::GetEncoding(936)
 [System.IO.File]::WriteAllText($path, $text, (New-Object System.Text.UTF8Encoding $true))
 ```
 
-**验证方法**：Get-Content C:\wz_evoc\scripts\boot.cmd 看中文是否正常。
+**验证方法**：Get-Content C:\alice_evoc\scripts\boot.cmd 看中文是否正常。
 
 > 顺带：PATH 里可能没有 powershell，用绝对路径
 > `$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe`。
@@ -123,7 +123,7 @@ PowerShell 被中断、Codex 轮次被截断，任务照样跑完。
 **清理**（务必做）：
 
 ```bat
-schtasks /delete /tn WZ_Run /f
+schtasks /delete /tn ALICE_Run /f
 ```
 
 **环境旁证**：本案例机器 EnableLUA=1 + ConsentPromptBehaviorAdmin=0 +
@@ -167,7 +167,7 @@ function gatedump() {
     try {
       // v1.0.2: hook_agent.js 已内置多候选探测, 直接调用 saveRange 即可
 const r = saveRange("mod_" + m.name + ".bin", m.base, m.size);
-// 若自己写脚本, 把目录换成本机可写路径 (别再写死 C:\wz_evoc)
+// 若自己写脚本, 把目录换成本机可写路径 (别再写死 C:\alice_evoc)
 const DUMPDIR = "<可写目录>\\dumps\\";
 const f = new File(DUMPDIR + "mod_" + m.name + ".bin", "wb");
       f.write(m.base.readByteArray(Math.min(m.size, 0x6000000)));
